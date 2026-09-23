@@ -34,7 +34,7 @@ Available as:
 
 ## Examples
 
-The [`examples/`](examples/) directory contains Jupyter notebooks showing how the datasets can be used with other Cuban statistical data.
+The [`examples/`](examples/) directory contains Jupyter notebooks demonstrating how to explore, visualize, and use the published datasets.
 
 ## Documentation
 
