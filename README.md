@@ -1,5 +1,7 @@
 # Cuba Geographic Data
 
+![División político-administrativa de Cuba](administrative_map.png)
+
 Open geographic datasets for Cuba, compiled from authoritative and openly available sources.
 
 The project provides cleaned and documented geographic data in formats suitable for GIS, spatial analysis, and programmatic use.
