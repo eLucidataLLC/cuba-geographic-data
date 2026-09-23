@@ -1,0 +1,13 @@
+# Local datasets and generated outputs
+/dev/
+
+# Python environment and bytecode
+/.venv/
+__pycache__/
+*.py[cod]
+
+# macOS metadata
+.DS_Store
+
+# Local bibliography
+/docs/references/
