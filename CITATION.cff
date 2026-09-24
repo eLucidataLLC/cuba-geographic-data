@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it using the metadata from this file."
+
+title: "Cuba Geographic Data — Administrative Data"
+
+authors:
+  - family-names: "Batista"
+    given-names: "Jorge L."
+    orcid: "https://orcid.org/0009-0005-9849-8322"
+
+type: dataset
+version: v1.0.0
+date-released: '2026-09-24'
+doi: 10.5281/zenodo.22927748
+
+repository-code: https://github.com/eLucidataLLC/cuba-geographic-data/tree/v1.0.0
+
+identifiers:
+  - type: swh
+    value: "swh:1:dir:87473fff64beedb6427ee3b14ef0264104219f95;origin=https://doi.org/10.5281/zenodo.22927747;visit=swh:1:snp:d1f7af1aabec28008df3a51628095b174764a296;anchor=swh:1:rel:50c4c38c768f63b219d1e2473b13d49237074005;path=eLucidataLLC-cuba-geographic-data-8ff12da"
+
+abstract: >-
+  First public release of Cuba Geographic Data, introducing two datasets
+  based on the official Código de la División Político-Administrativa
+  (CoDPA): Administrative Geographic Names and Administrative Geometry.
+
+  Administrative Geographic Names provides official province and municipality
+  names and CoDPA codes, source cross-references, and point locations.
+
+  Administrative Geometry provides administrative polygons linked to the
+  corresponding geographic-name records.
+
+  Both datasets are available as GeoParquet, GeoJSON, and GeoPackage and
+  include ISO 19115-3 metadata.
