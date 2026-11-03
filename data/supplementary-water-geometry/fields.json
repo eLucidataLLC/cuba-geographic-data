@@ -1,0 +1,99 @@
+[
+  {
+    "field": "id",
+    "type": "string",
+    "description": "UUIDv7 identifier of this object; existing generated IDs are preserved.",
+    "nullable": false,
+    "format": "uuid",
+    "uuid_version": 7,
+    "unique": true
+  },
+  {
+    "field": "input_record_index",
+    "type": "integer",
+    "description": "Retained source/workflow field input_record_index; values are exported without reinterpretation.",
+    "nullable": true
+  },
+  {
+    "field": "source",
+    "type": "string",
+    "description": "Retained source/workflow field source; values are exported without reinterpretation.",
+    "nullable": true
+  },
+  {
+    "field": "source_id",
+    "type": "string",
+    "description": "Verbatim source feature identifier; not a project UUID.",
+    "nullable": true
+  },
+  {
+    "field": "reference_dataset",
+    "type": "string",
+    "description": "Retained source/workflow field reference_dataset; values are exported without reinterpretation.",
+    "nullable": true
+  },
+  {
+    "field": "inclusion_reason",
+    "type": "string",
+    "description": "Retained source/workflow field inclusion_reason; values are exported without reinterpretation.",
+    "nullable": true
+  },
+  {
+    "field": "validation_status",
+    "type": "string",
+    "description": "Retained source/workflow field validation_status; values are exported without reinterpretation.",
+    "nullable": true
+  },
+  {
+    "field": "name",
+    "type": "string",
+    "description": "Retained source/workflow field name; values are exported without reinterpretation.",
+    "nullable": true
+  },
+  {
+    "field": "alternative_names",
+    "type": "string",
+    "description": "JSON array of other recorded names belonging to this name object.",
+    "nullable": true
+  },
+  {
+    "field": "source_feature_type",
+    "type": "string",
+    "description": "Retained source/workflow field source_feature_type; values are exported without reinterpretation.",
+    "nullable": true
+  },
+  {
+    "field": "source_feature_class",
+    "type": "string",
+    "description": "Retained source/workflow field source_feature_class; values are exported without reinterpretation.",
+    "nullable": true
+  },
+  {
+    "field": "source_provenance",
+    "type": "string",
+    "description": "Retained source/workflow field source_provenance; values are exported without reinterpretation.",
+    "nullable": true
+  },
+  {
+    "field": "geometry",
+    "type": "geometry",
+    "description": "Spatial representation of this record; CRS and coverage are documented in metadata.xml.",
+    "nullable": true,
+    "geometry_types": [
+      "LineString",
+      "Polygon"
+    ]
+  },
+  {
+    "field": "geometry_valid",
+    "type": "boolean",
+    "description": "Whether the exported source geometry passes GEOS validity checks; no repair is applied.",
+    "nullable": true
+  },
+  {
+    "field": "geometry_validity_reason",
+    "type": "string",
+    "description": "GEOS validity explanation for the exported coordinates.",
+    "nullable": true
+  }
+]

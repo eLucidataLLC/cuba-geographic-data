@@ -1,0 +1,19 @@
+# Cuba Water-body Geometry
+
+[GeoParquet](cuba_water_body_geometry.parquet) · [GeoJSON](cuba_water_body_geometry.geojson) · [GeoPackage](cuba_water_body_geometry.gpkg)
+
+## Use
+
+Use the field definitions to interpret identifiers, relationships and status values before analysis.
+
+The GeoPackage table/layer is `cuba_water_body_geometry`. Alternative formats represent the same product.
+
+## Documentation
+
+- [Metadata](metadata.xml): description, coverage, lineage, limitations, license and source attribution. This is the authoritative product metadata.
+- [Field definitions](fields.json): logical types, null semantics, units, controlled values and relationship targets.
+- [Checksums](checksums.json): filenames, byte sizes and SHA-256 hashes for download verification.
+
+Cross-product references identify related records; they do not require copying another product into this folder.
+
+This product is now present in the repository but is not part of the existing release. Formal ISO XML schema validation remains pending.

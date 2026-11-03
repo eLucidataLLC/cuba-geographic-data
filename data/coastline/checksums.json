@@ -1,0 +1,34 @@
+{
+  "files": [
+    {
+      "filename": "README.md",
+      "bytes": 950,
+      "sha256": "c5aee6a97a062492828fe61a0254cc5f1b4207e6da0684463999dad8f78b1c1c"
+    },
+    {
+      "filename": "cuba_coastline.geojson",
+      "bytes": 19985005,
+      "sha256": "7a12a24fe3f3dbec19bc1bb5d17792025c3c1fe2376bc65e8cb495efb576cd0d"
+    },
+    {
+      "filename": "cuba_coastline.gpkg",
+      "bytes": 10510336,
+      "sha256": "4a7ca0aa7a3d5a9d665014e6a867affc7d05dc9858abc53540a9c66ad308b84b"
+    },
+    {
+      "filename": "cuba_coastline.parquet",
+      "bytes": 10405817,
+      "sha256": "8102330cd6d45e7b5c69c71373bb64696d83761b00f953a5cab79d8b346a8d1c"
+    },
+    {
+      "filename": "fields.json",
+      "bytes": 1143,
+      "sha256": "278b4b503527f92b92fd829d607574a29451c365f7a1825717f790a039beaf92"
+    },
+    {
+      "filename": "metadata.xml",
+      "bytes": 13855,
+      "sha256": "c0e451d1b7e9873a9fdd978f2f085c7a2ef61a66ab846e4fd6b489a969b79fe2"
+    }
+  ]
+}

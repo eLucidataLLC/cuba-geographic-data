@@ -1,0 +1,97 @@
+[
+  {
+    "field": "id",
+    "type": "string",
+    "description": "Persistent UUIDv7 identifying this product record; distinct from source identifiers.",
+    "nullable": false,
+    "format": "uuid",
+    "uuid_version": 7,
+    "unique": true
+  },
+  {
+    "field": "codpa_code",
+    "type": "string",
+    "description": "Official CoDPA administrative code, stored as text to preserve punctuation and leading zeros.",
+    "nullable": false
+  },
+  {
+    "field": "name",
+    "type": "string",
+    "description": "Official administrative name from CoDPA.",
+    "nullable": false
+  },
+  {
+    "field": "level",
+    "type": "string",
+    "description": "Administrative level; Isla de la Juventud is represented once as special_municipality.",
+    "nullable": false,
+    "allowed_values": [
+      "province",
+      "municipality",
+      "special_municipality"
+    ]
+  },
+  {
+    "field": "province_code",
+    "type": "string",
+    "description": "CoDPA code identifying the province relationship; see null and relationship semantics.",
+    "nullable": true,
+    "references": {
+      "product": "administrative-geographic-names",
+      "field": "codpa_code"
+    },
+    "null_meaning": "No parent province for Isla de la Juventud; province records contain their own code."
+  },
+  {
+    "field": "province_name",
+    "type": "string",
+    "description": "Official name of the province identified by province_code.",
+    "nullable": true,
+    "null_meaning": "No parent province for Isla de la Juventud; province records contain their own name."
+  },
+  {
+    "field": "gns_id",
+    "type": "string",
+    "description": "Verbatim NGA GNS feature identifier (UFI), stored as text; may be negative.",
+    "nullable": false
+  },
+  {
+    "field": "geonames_id",
+    "type": "string",
+    "description": "Verbatim GeoNames feature identifier, stored as text.",
+    "nullable": false
+  },
+  {
+    "field": "overture_id",
+    "type": "string",
+    "description": "Verbatim Overture feature identifier used as a source cross-reference.",
+    "nullable": false
+  },
+  {
+    "field": "lat",
+    "type": "number",
+    "description": "Latitude of the source GNS point in WGS 84.",
+    "nullable": false,
+    "unit": "degrees",
+    "minimum": -90,
+    "maximum": 90
+  },
+  {
+    "field": "lon",
+    "type": "number",
+    "description": "Longitude of the source GNS point in WGS 84.",
+    "nullable": false,
+    "unit": "degrees",
+    "minimum": -180,
+    "maximum": 180
+  },
+  {
+    "field": "geometry",
+    "type": "geometry",
+    "description": "Spatial representation of this record; CRS and coverage are documented in metadata.xml.",
+    "nullable": false,
+    "geometry_types": [
+      "Point"
+    ]
+  }
+]

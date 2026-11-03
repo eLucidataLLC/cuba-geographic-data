@@ -1,0 +1,64 @@
+[
+  {
+    "field": "id",
+    "type": "string",
+    "description": "Persistent UUIDv7 identifying this product record; distinct from source identifiers.",
+    "nullable": false,
+    "format": "uuid",
+    "uuid_version": 7,
+    "unique": true
+  },
+  {
+    "field": "nonmarine_cells",
+    "type": "integer",
+    "description": "Number of nonmarine H3 cells contributing to the dissolved polygon footprint.",
+    "nullable": false,
+    "unit": "count",
+    "minimum": 0
+  },
+  {
+    "field": "h3_resolution",
+    "type": "integer",
+    "description": "H3 resolution of the source cells; a source-processing attribute, not individual-cell geometry.",
+    "nullable": false,
+    "minimum": 0,
+    "maximum": 15
+  },
+  {
+    "field": "polygon_parts",
+    "type": "integer",
+    "description": "Number of polygon components in the dissolved MultiPolygon.",
+    "nullable": false,
+    "unit": "count",
+    "minimum": 0
+  },
+  {
+    "field": "interior_rings",
+    "type": "integer",
+    "description": "Total number of interior rings in the polygon components.",
+    "nullable": false,
+    "unit": "count",
+    "minimum": 0
+  },
+  {
+    "field": "geometry",
+    "type": "geometry",
+    "description": "Spatial representation of this record; CRS and coverage are documented in metadata.xml.",
+    "nullable": false,
+    "geometry_types": [
+      "MultiPolygon"
+    ]
+  },
+  {
+    "field": "geometry_valid",
+    "type": "boolean",
+    "description": "Result of the GEOS geometry-validity check; true means valid. No repair is implied.",
+    "nullable": false
+  },
+  {
+    "field": "geometry_validity_reason",
+    "type": "string",
+    "description": "GEOS validity explanation; Valid Geometry indicates a passed check.",
+    "nullable": false
+  }
+]

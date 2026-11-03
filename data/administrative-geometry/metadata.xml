@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<mdb:MD_Metadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0" xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0" xmlns:mcc="http://standards.iso.org/iso/19115/-3/mcc/1.0" xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0" xmlns:msr="http://standards.iso.org/iso/19115/-3/msr/2.0" xmlns:mrs="http://standards.iso.org/iso/19115/-3/mrs/1.0" xmlns:mri="http://standards.iso.org/iso/19115/-3/mri/1.0" xmlns:gex="http://standards.iso.org/iso/19115/-3/gex/1.0" xmlns:mco="http://standards.iso.org/iso/19115/-3/mco/1.0" xmlns:mrd="http://standards.iso.org/iso/19115/-3/mrd/1.0" xmlns:mrl="http://standards.iso.org/iso/19115/-3/mrl/2.0" xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0" xsi:schemaLocation="http://standards.iso.org/iso/19115/-3/mdb/2.0 https://schemas.isotc211.org/19115/-3/mdb/2.0/mdb.xsd">
+<mdb:MD_Metadata xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0" xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0" xmlns:gex="http://standards.iso.org/iso/19115/-3/gex/1.0" xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0" xmlns:mcc="http://standards.iso.org/iso/19115/-3/mcc/1.0" xmlns:mco="http://standards.iso.org/iso/19115/-3/mco/1.0" xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0" xmlns:mrd="http://standards.iso.org/iso/19115/-3/mrd/1.0" xmlns:mri="http://standards.iso.org/iso/19115/-3/mri/1.0" xmlns:mrl="http://standards.iso.org/iso/19115/-3/mrl/2.0" xmlns:mrs="http://standards.iso.org/iso/19115/-3/mrs/1.0" xmlns:msr="http://standards.iso.org/iso/19115/-3/msr/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://standards.iso.org/iso/19115/-3/mdb/2.0 https://schemas.isotc211.org/19115/-3/mdb/2.0/mdb.xsd">
   <mdb:defaultLocale>
     <lan:PT_Locale>
       <lan:language>
@@ -156,10 +156,7 @@
         </cit:CI_Citation>
       </mri:citation>
       <mri:abstract>
-        <gco:CharacterString>Administrative geometry for the provinces of Cuba and Isla de la Juventud
-defined by the official Código de la División Político-Administrativa
-(CoDPA). The geometry combines resolved Overture Maps administrative
-division areas with Natural Earth land geometry.</gco:CharacterString>
+        <gco:CharacterString>Administrative polygons for 15 provinces, 167 ordinary municipalities and the special municipality of Isla de la Juventud, following CoDPA. The 183 records link to the administrative names product through gazetteer_id. Province and municipality geometries overlap by design.</gco:CharacterString>
       </mri:abstract>
       <mri:spatialRepresentationType>
         <mcc:MD_SpatialRepresentationTypeCode codeList="https://schemas.isotc211.org/resources/codelists/codelists.xml#ISO19115-1.1.mcc.MD_SpatialRepresentationTypeCode" codeListValue="vector">vector</mcc:MD_SpatialRepresentationTypeCode>
@@ -211,12 +208,12 @@ division areas with Natural Earth land geometry.</gco:CharacterString>
       </mri:descriptiveKeywords>
       <mri:resourceConstraints>
         <mco:MD_LegalConstraints>
-          <mco:useLimitation>
-            <gco:CharacterString>ODbL 1.0</gco:CharacterString>
-          </mco:useLimitation>
           <mco:useConstraints>
-            <mco:MD_RestrictionCode codeList="https://schemas.isotc211.org/resources/codelists/codelists.xml#ISO19115-1.1.mco.MD_RestrictionCode" codeListValue="licence">licence</mco:MD_RestrictionCode>
+            <mco:MD_RestrictionCode codeList="https://schemas.isotc211.org/resources/codelists/codelists.xml#ISO19115-1.1.mco.MD_RestrictionCode" codeListValue="license">license</mco:MD_RestrictionCode>
           </mco:useConstraints>
+          <mco:otherConstraints>
+            <gco:CharacterString>ODbL 1.0: https://opendatacommons.org/licenses/odbl/1-0/. Applies to this product in every distribution format. Credit Overture Maps Foundation (https://overturemaps.org/), OpenStreetMap contributors (https://www.openstreetmap.org/copyright), Natural Earth (https://www.naturalearthdata.com/) and ONEI / CoDPA. Project geometry selection, union and clipping are documented in lineage.</gco:CharacterString>
+          </mco:otherConstraints>
         </mco:MD_LegalConstraints>
       </mri:resourceConstraints>
       <mri:defaultLocale>
@@ -322,13 +319,7 @@ division areas with Natural Earth land geometry.</gco:CharacterString>
   <mdb:resourceLineage>
     <mrl:LI_Lineage>
       <mrl:statement>
-        <gco:CharacterString>CoDPA defines the administrative inventory, official names, codes, levels,
-and province-to-municipality relationships. Province-level CoDPA records and
-Isla de la Juventud were linked to resolved Overture Maps division
-identifiers. The corresponding Overture division-area geometries were
-selected and dissolved by CoDPA province code and name. The resulting
-geometries were intersected with the Natural Earth land geometry and stored
-as multipolygons.</gco:CharacterString>
+        <gco:CharacterString>CoDPA defines the administrative inventory and official names. Province geometries are dissolved from matched Overture division areas and intersected with Natural Earth land geometry. Ordinary municipality inputs are grouped by CoDPA code and combined using polygon union. Isla de la Juventud inputs are intersected with Natural Earth land during extraction to remove an erroneous rectangular extent, then combined into one special-municipality record. Outputs are MultiPolygons in EPSG:4326. Province and municipality coastlines can differ because their construction paths differ. Each geometry has its own UUIDv7 and references the administrative name UUID through gazetteer_id.</gco:CharacterString>
       </mrl:statement>
       <mrl:source>
         <mrl:LI_Source>

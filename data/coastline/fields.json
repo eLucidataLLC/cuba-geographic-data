@@ -1,0 +1,42 @@
+[
+  {
+    "field": "id",
+    "type": "string",
+    "description": "Persistent UUIDv7 identifying this product record; distinct from source identifiers.",
+    "nullable": false,
+    "format": "uuid",
+    "uuid_version": 7,
+    "unique": true
+  },
+  {
+    "field": "source_outline_id",
+    "type": "string",
+    "description": "UUID foreign key to the land-polygon record whose exterior rings form this coastline.",
+    "nullable": false,
+    "references": {
+      "product": "land-polygons",
+      "field": "id"
+    }
+  },
+  {
+    "field": "geometry",
+    "type": "geometry",
+    "description": "Spatial representation of this record; CRS and coverage are documented in metadata.xml.",
+    "nullable": false,
+    "geometry_types": [
+      "MultiLineString"
+    ]
+  },
+  {
+    "field": "geometry_valid",
+    "type": "boolean",
+    "description": "Result of the GEOS geometry-validity check; true means valid. No repair is implied.",
+    "nullable": false
+  },
+  {
+    "field": "geometry_validity_reason",
+    "type": "string",
+    "description": "GEOS validity explanation; Valid Geometry indicates a passed check.",
+    "nullable": false
+  }
+]

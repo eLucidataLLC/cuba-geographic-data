@@ -1,0 +1,34 @@
+{
+  "files": [
+    {
+      "filename": "README.md",
+      "bytes": 1023,
+      "sha256": "9190b1fb55e52e2b7b0156237efb78574dc6214fa4ee385957ad95a1f887c4f8"
+    },
+    {
+      "filename": "cuba_water_body_geometry.geojson",
+      "bytes": 2742791,
+      "sha256": "717977b73ce3efa803a5d5c2a20a742b82f9d7b4e1b108e7c36d43f7f5e146ce"
+    },
+    {
+      "filename": "cuba_water_body_geometry.gpkg",
+      "bytes": 1282048,
+      "sha256": "c2cd92e605b20f5284ca28789e12af8073f4ed6f6365a8b3162bf598735dbc5d"
+    },
+    {
+      "filename": "cuba_water_body_geometry.parquet",
+      "bytes": 693387,
+      "sha256": "7f81fa24125f7227334710dc71f3d0344a924838f6c3df0238795ed7e966be05"
+    },
+    {
+      "filename": "fields.json",
+      "bytes": 6676,
+      "sha256": "380a39cf46e20e5af72eec16859ff20097bba76593a0aaa1be3486666533627c"
+    },
+    {
+      "filename": "metadata.xml",
+      "bytes": 14370,
+      "sha256": "a62bbfe1443516d897971a5340dbaceb10fe83410827f4626dc393637a9d189a"
+    }
+  ]
+}

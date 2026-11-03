@@ -1,0 +1,216 @@
+[
+  {
+    "field": "Hylak_id",
+    "type": "integer",
+    "description": "Original HydroLAKES water-body identifier.",
+    "nullable": true
+  },
+  {
+    "field": "id",
+    "type": "string",
+    "description": "UUIDv7 identifier of this object; existing generated IDs are preserved.",
+    "nullable": false,
+    "format": "uuid",
+    "uuid_version": 7,
+    "unique": true
+  },
+  {
+    "field": "Lake_name",
+    "type": "string",
+    "description": "Retained source/workflow field Lake_name; values are exported without reinterpretation.",
+    "nullable": true
+  },
+  {
+    "field": "Country",
+    "type": "string",
+    "description": "Retained source/workflow field Country; values are exported without reinterpretation.",
+    "nullable": true
+  },
+  {
+    "field": "Continent",
+    "type": "string",
+    "description": "Retained source/workflow field Continent; values are exported without reinterpretation.",
+    "nullable": true
+  },
+  {
+    "field": "Poly_src",
+    "type": "string",
+    "description": "Retained source/workflow field Poly_src; values are exported without reinterpretation.",
+    "nullable": true
+  },
+  {
+    "field": "Lake_type",
+    "type": "integer",
+    "description": "Retained source/workflow field Lake_type; values are exported without reinterpretation.",
+    "nullable": true
+  },
+  {
+    "field": "Grand_id",
+    "type": "integer",
+    "description": "Retained source/workflow field Grand_id; values are exported without reinterpretation.",
+    "nullable": true
+  },
+  {
+    "field": "Lake_area",
+    "type": "number",
+    "description": "Retained source/workflow field Lake_area; values are exported without reinterpretation.",
+    "nullable": true
+  },
+  {
+    "field": "Shore_len",
+    "type": "number",
+    "description": "Retained source/workflow field Shore_len; values are exported without reinterpretation.",
+    "nullable": true
+  },
+  {
+    "field": "Shore_dev",
+    "type": "number",
+    "description": "Retained source/workflow field Shore_dev; values are exported without reinterpretation.",
+    "nullable": true
+  },
+  {
+    "field": "Vol_total",
+    "type": "number",
+    "description": "Retained source/workflow field Vol_total; values are exported without reinterpretation.",
+    "nullable": true
+  },
+  {
+    "field": "Vol_res",
+    "type": "number",
+    "description": "Retained source/workflow field Vol_res; values are exported without reinterpretation.",
+    "nullable": true
+  },
+  {
+    "field": "Vol_src",
+    "type": "integer",
+    "description": "Retained source/workflow field Vol_src; values are exported without reinterpretation.",
+    "nullable": true
+  },
+  {
+    "field": "Depth_avg",
+    "type": "number",
+    "description": "Retained source/workflow field Depth_avg; values are exported without reinterpretation.",
+    "nullable": true
+  },
+  {
+    "field": "Dis_avg",
+    "type": "number",
+    "description": "Retained source/workflow field Dis_avg; values are exported without reinterpretation.",
+    "nullable": true
+  },
+  {
+    "field": "Res_time",
+    "type": "number",
+    "description": "Retained source/workflow field Res_time; values are exported without reinterpretation.",
+    "nullable": true
+  },
+  {
+    "field": "Elevation",
+    "type": "integer",
+    "description": "Retained source/workflow field Elevation; values are exported without reinterpretation.",
+    "nullable": true
+  },
+  {
+    "field": "Slope_100",
+    "type": "number",
+    "description": "Retained source/workflow field Slope_100; values are exported without reinterpretation.",
+    "nullable": true
+  },
+  {
+    "field": "Wshd_area",
+    "type": "number",
+    "description": "Retained source/workflow field Wshd_area; values are exported without reinterpretation.",
+    "nullable": true
+  },
+  {
+    "field": "Pour_long",
+    "type": "number",
+    "description": "Retained source/workflow field Pour_long; values are exported without reinterpretation.",
+    "nullable": true
+  },
+  {
+    "field": "Pour_lat",
+    "type": "number",
+    "description": "Retained source/workflow field Pour_lat; values are exported without reinterpretation.",
+    "nullable": true
+  },
+  {
+    "field": "Shape_Length",
+    "type": "number",
+    "description": "Retained source/workflow field Shape_Length; values are exported without reinterpretation.",
+    "nullable": true
+  },
+  {
+    "field": "Shape_Area",
+    "type": "number",
+    "description": "Retained source/workflow field Shape_Area; values are exported without reinterpretation.",
+    "nullable": true
+  },
+  {
+    "field": "geometry",
+    "type": "geometry",
+    "description": "Spatial representation of this record; CRS and coverage are documented in metadata.xml.",
+    "nullable": true,
+    "geometry_types": [
+      "MultiPolygon"
+    ]
+  },
+  {
+    "field": "geometry_valid",
+    "type": "boolean",
+    "description": "GEOS validity of the distributed geometry after any recorded repair.",
+    "nullable": true
+  },
+  {
+    "field": "geometry_validity_reason",
+    "type": "string",
+    "description": "GEOS validity explanation for the distributed geometry after any recorded repair.",
+    "nullable": true
+  },
+  {
+    "field": "gazetteer_id",
+    "type": "string",
+    "description": "UUIDv7 foreign key to water geographic names.id.",
+    "nullable": true,
+    "references": {
+      "product": "water-geographic-names",
+      "field": "id"
+    }
+  },
+  {
+    "field": "alternative_gazetteer_ids",
+    "type": "string",
+    "description": "JSON array of additional accepted name UUIDs on this geometry; all accepted names when no preferred name was selected.",
+    "nullable": true
+  },
+  {
+    "field": "naming_status",
+    "type": "string",
+    "description": "Recorded reach applicability status or accepted/not_applicable water-body association status.",
+    "nullable": true
+  },
+  {
+    "field": "name_reference_status",
+    "type": "string",
+    "description": "Whether a preferred name is selected, multiple accepted names have no preference, or no name is assigned.",
+    "nullable": true
+  },
+  {
+    "field": "source_geometry_valid",
+    "type": "boolean",
+    "description": "Validity of the original source polygon before the recorded ring repair.",
+    "nullable": true
+  },
+  {
+    "field": "source_geometry_validity_reason",
+    "type": "string",
+    "description": "GEOS validity explanation for the original source polygon before repair.",
+    "nullable": true
+  },
+  {
+    "field": "geometry_repair_method",
+    "type": "string",
+    "description": "none for unchanged polygons; make_valid_linework_boundary_preserving reorganizes self-touching rings without changing coordinates, boundary point sets or polygon-part counts.",
+    "nullable": true
+  }
+]

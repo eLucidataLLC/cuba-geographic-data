@@ -12,6 +12,12 @@ are licensed under the [Open Data Commons Open Database License (ODbL) 1.0](http
 
 This exception applies to the administrative geometry product because it incorporates data from Overture Maps Divisions distributed under the ODbL.
 
+## Coastline and Land Polygons
+
+`cuba_coastline.*` and `cuba_land_polygons.*` are licensed under [ODbL 1.0](https://opendatacommons.org/licenses/odbl/1-0/) in every distribution format.
+
+These products derive from the project's nonmarine cell classification, whose marine mask incorporates Overture ocean polygons. Attribution is retained for Overture Maps Foundation and OpenStreetMap contributors. The project's classification, cell dissolve, and extraction of exterior rings are modifications, not official upstream products or surveyed shorelines. See the product-specific [coastline notice](data/coastline/metadata.xml) and [land-polygon notice](data/land-polygons/metadata.xml).
+
 ## Source Data and Attribution
 
 The datasets in this repository are compiled from multiple sources. Their original licensing and attribution requirements remain applicable where relevant.
@@ -47,3 +53,11 @@ Overture's attribution requirements for the Divisions theme include attribution 
 ## References
 
 Full references for the source datasets and documents are provided in [docs/references.md](docs/references.md).
+
+## Water names, river geometry and reference tables
+
+`cuba_water_geographic_names.*`, `cuba_river_centerlines.*` (including compressed GeoJSON), and `reference/cuba_water_names_reference.csv` and `reference/cuba_onei_river_correspondence.csv` are ODbL 1.0. See the authoritative attribution in [name metadata](data/water-geographic-names/metadata.xml), [river metadata](data/river-centerlines/metadata.xml), and the [reference-table notice](reference/LICENSE.md).
+
+## Additional hydrographic products
+
+Water-body geometry and river catchments retain CC BY 4.0. Supplementary water geometry is ODbL 1.0. Repairing source polygon rings does not change these licenses. Product metadata contains source attribution and derivation details: [water bodies](data/water-body-geometry/metadata.xml), [catchments](data/river-catchments/metadata.xml), [supplementary observations](data/supplementary-water-geometry/metadata.xml).

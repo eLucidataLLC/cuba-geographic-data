@@ -1,0 +1,104 @@
+[
+  {
+    "field": "id",
+    "type": "string",
+    "description": "UUIDv7 identifier of this object; existing generated IDs are preserved.",
+    "nullable": false,
+    "format": "uuid",
+    "uuid_version": 7,
+    "unique": true
+  },
+  {
+    "field": "UPSTREAM_ACC",
+    "type": "number",
+    "description": "Retained source/workflow field UPSTREAM_ACC; values are exported without reinterpretation.",
+    "nullable": true
+  },
+  {
+    "field": "UPLAND_SKM",
+    "type": "number",
+    "description": "Retained source/workflow field UPLAND_SKM; values are exported without reinterpretation.",
+    "nullable": true
+  },
+  {
+    "field": "HYBAS_ID",
+    "type": "integer",
+    "description": "Retained source/workflow field HYBAS_ID; values are exported without reinterpretation.",
+    "nullable": true
+  },
+  {
+    "field": "STRM_ID",
+    "type": "integer",
+    "description": "Original HydroSHEDS reach identifier.",
+    "nullable": true
+  },
+  {
+    "field": "Shape_Length",
+    "type": "number",
+    "description": "Retained source/workflow field Shape_Length; values are exported without reinterpretation.",
+    "nullable": true
+  },
+  {
+    "field": "Shape_Area",
+    "type": "number",
+    "description": "Retained source/workflow field Shape_Area; values are exported without reinterpretation.",
+    "nullable": true
+  },
+  {
+    "field": "source_objectid",
+    "type": "integer",
+    "description": "Retained source/workflow field source_objectid; values are exported without reinterpretation.",
+    "nullable": true
+  },
+  {
+    "field": "MAIN_BAS",
+    "type": "integer",
+    "description": "HydroSHEDS watershed identifier; scope of river name identities.",
+    "nullable": true
+  },
+  {
+    "field": "geometry",
+    "type": "geometry",
+    "description": "Spatial representation of this record; CRS and coverage are documented in metadata.xml.",
+    "nullable": true,
+    "geometry_types": [
+      "MultiPolygon"
+    ]
+  },
+  {
+    "field": "reference_reach_id",
+    "type": "string",
+    "description": "UUIDv7 link to the reach associated with this catchment; distinct from catchment.id.",
+    "nullable": true
+  },
+  {
+    "field": "geometry_valid",
+    "type": "boolean",
+    "description": "GEOS validity of the distributed geometry after any recorded repair.",
+    "nullable": true
+  },
+  {
+    "field": "geometry_validity_reason",
+    "type": "string",
+    "description": "GEOS validity explanation for the distributed geometry after any recorded repair.",
+    "nullable": true
+  },
+  {
+    "field": "source_geometry_valid",
+    "type": "boolean",
+    "description": "Validity of the original source polygon before the recorded ring repair.",
+    "nullable": true
+  },
+  {
+    "field": "source_geometry_validity_reason",
+    "type": "string",
+    "description": "GEOS validity explanation for the original source polygon before repair.",
+    "nullable": true
+  },
+  {
+    "field": "geometry_repair_method",
+    "type": "string",
+    "description": "none for unchanged polygons; make_valid_linework_boundary_preserving reorganizes self-touching rings without changing coordinates, boundary point sets or polygon-part counts.",
+    "nullable": true
+  }
+]

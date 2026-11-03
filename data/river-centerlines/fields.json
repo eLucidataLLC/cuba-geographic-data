@@ -1,0 +1,192 @@
+[
+  {
+    "field": "STRM_ID",
+    "type": "integer",
+    "description": "Original HydroSHEDS reach identifier.",
+    "nullable": true
+  },
+  {
+    "field": "id",
+    "type": "string",
+    "description": "UUIDv7 identifier of this object; existing generated IDs are preserved.",
+    "nullable": false,
+    "format": "uuid",
+    "uuid_version": 7,
+    "unique": true
+  },
+  {
+    "field": "STRM_DN",
+    "type": "integer",
+    "description": "Original downstream reach identifier; -1 marks an outlet.",
+    "nullable": true
+  },
+  {
+    "field": "STRM_UP",
+    "type": "string",
+    "description": "Retained source/workflow field STRM_UP; values are exported without reinterpretation.",
+    "nullable": true
+  },
+  {
+    "field": "GRID_CODE",
+    "type": "integer",
+    "description": "Retained source/workflow field GRID_CODE; values are exported without reinterpretation.",
+    "nullable": true
+  },
+  {
+    "field": "MAIN_BAS",
+    "type": "integer",
+    "description": "HydroSHEDS watershed identifier; scope of river name identities.",
+    "nullable": true
+  },
+  {
+    "field": "NODE_ID_UP",
+    "type": "integer",
+    "description": "Retained source/workflow field NODE_ID_UP; values are exported without reinterpretation.",
+    "nullable": true
+  },
+  {
+    "field": "NODE_ID_DOWN",
+    "type": "integer",
+    "description": "Retained source/workflow field NODE_ID_DOWN; values are exported without reinterpretation.",
+    "nullable": true
+  },
+  {
+    "field": "LENGTH_KM",
+    "type": "number",
+    "description": "Retained source/workflow field LENGTH_KM; values are exported without reinterpretation.",
+    "nullable": true
+  },
+  {
+    "field": "UP_CELLS",
+    "type": "number",
+    "description": "Retained source/workflow field UP_CELLS; values are exported without reinterpretation.",
+    "nullable": true
+  },
+  {
+    "field": "UPLAND_SKM",
+    "type": "number",
+    "description": "Retained source/workflow field UPLAND_SKM; values are exported without reinterpretation.",
+    "nullable": true
+  },
+  {
+    "field": "ORD_STRAH",
+    "type": "integer",
+    "description": "HydroSHEDS Strahler stream order.",
+    "nullable": true
+  },
+  {
+    "field": "source_objectid",
+    "type": "integer",
+    "description": "Retained source/workflow field source_objectid; values are exported without reinterpretation.",
+    "nullable": true
+  },
+  {
+    "field": "extended_to_coast",
+    "type": "boolean",
+    "description": "Retained source/workflow field extended_to_coast; values are exported without reinterpretation.",
+    "nullable": true
+  },
+  {
+    "field": "extension_evidence",
+    "type": "string",
+    "description": "Retained source/workflow field extension_evidence; values are exported without reinterpretation.",
+    "nullable": true
+  },
+  {
+    "field": "extension_gap_m",
+    "type": "number",
+    "description": "Retained source/workflow field extension_gap_m; values are exported without reinterpretation.",
+    "nullable": true
+  },
+  {
+    "field": "geometry",
+    "type": "geometry",
+    "description": "Modeled drainage centerline geometry in EPSG:4326, including flagged project coastal extensions; not a surveyed channel boundary or water-surface width.",
+    "nullable": true,
+    "geometry_types": [
+      "MultiLineString"
+    ]
+  },
+  {
+    "field": "geometry_valid",
+    "type": "boolean",
+    "description": "Whether the exported source geometry passes GEOS validity checks; no repair is applied.",
+    "nullable": true
+  },
+  {
+    "field": "geometry_validity_reason",
+    "type": "string",
+    "description": "GEOS validity explanation for the exported coordinates.",
+    "nullable": true
+  },
+  {
+    "field": "gazetteer_id",
+    "type": "string",
+    "description": "UUIDv7 foreign key to water geographic names.id.",
+    "nullable": true,
+    "references": {
+      "product": "water-geographic-names",
+      "field": "id"
+    }
+  },
+  {
+    "field": "alternative_gazetteer_ids",
+    "type": "string",
+    "description": "JSON array of additional accepted name UUIDs on this geometry; all accepted names when no preferred name was selected.",
+    "nullable": true
+  },
+  {
+    "field": "naming_status",
+    "type": "string",
+    "description": "Recorded reach applicability status or accepted/not_applicable water-body association status.",
+    "nullable": true
+  },
+  {
+    "field": "name_reference_status",
+    "type": "string",
+    "description": "Whether a preferred name is selected, multiple accepted names have no preference, or no name is assigned.",
+    "nullable": true
+  },
+  {
+    "field": "name_assignment_status",
+    "type": "string",
+    "description": "Workflow classification of the reach name assignment, including direct, propagated, alternative, unnamed or withheld outcomes.",
+    "nullable": true
+  },
+  {
+    "field": "propagation_basis",
+    "type": "string",
+    "description": "Evidence or propagation method used to determine naming applicability on this reach.",
+    "nullable": true
+  },
+  {
+    "field": "assignment_reason",
+    "type": "string",
+    "description": "Recorded workflow decision rule explaining the selected, unnamed or withheld assignment; see readable_status for its applicability class.",
+    "nullable": true
+  },
+  {
+    "field": "preferred_name",
+    "type": "string",
+    "description": "Preferred recorded label; never a reconstructed spelling.",
+    "nullable": true
+  },
+  {
+    "field": "contender_gazetteer_ids",
+    "type": "string",
+    "description": "JSON array of competing name UUIDs; not assignments.",
+    "nullable": true
+  },
+  {
+    "field": "pending_type_review_gazetteer_ids",
+    "type": "string",
+    "description": "JSON array of unselected type-pending name UUIDs.",
+    "nullable": true
+  },
+  {
+    "field": "readable_status",
+    "type": "string",
+    "description": "Human-readable interpretation of naming_status; uncertain selections and withheld assignments remain explicit.",
+    "nullable": true
+  }
+]

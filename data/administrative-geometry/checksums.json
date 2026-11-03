@@ -1,0 +1,34 @@
+{
+  "files": [
+    {
+      "filename": "README.md",
+      "bytes": 1032,
+      "sha256": "30d99860bad9e484a54662f8df7d0ce5e273a8e3dc048e9d35327872cb8e5af4"
+    },
+    {
+      "filename": "cuba_administrative_geometry.geojson",
+      "bytes": 12776749,
+      "sha256": "95f7d841ac153ace54edd4cd5eae81aec4629486bae51dde70b69e8d67b9ad63"
+    },
+    {
+      "filename": "cuba_administrative_geometry.gpkg",
+      "bytes": 6590464,
+      "sha256": "740bc722d6a4ad8465e9a549a899a2bb668d1cbb48fdf3d60f8e1d14e9ed27c3"
+    },
+    {
+      "filename": "cuba_administrative_geometry.parquet",
+      "bytes": 5939918,
+      "sha256": "4dfadc58fdf8573834ac920c181415771a267cf29d68b919bc306635f62d5391"
+    },
+    {
+      "filename": "fields.json",
+      "bytes": 1929,
+      "sha256": "b2ab2f347edffe42b284304f19fcf03af867731ee8eb78cca94a08384d0de793"
+    },
+    {
+      "filename": "metadata.xml",
+      "bytes": 16324,
+      "sha256": "d01218119af5091b47cfa808de13cf81180e5d99972ca82748920d78ef20b8ca"
+    }
+  ]
+}
