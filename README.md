@@ -1,102 +1,107 @@
 # Cuba Geographic Data
 
-![División político-administrativa de Cuba](administrative_map.png)
-
-Open geographic datasets for Cuba, compiled from authoritative and openly available sources.
-
-The project provides cleaned and documented geographic data in formats suitable for GIS, spatial analysis, and programmatic use.
+Open geographic datasets for Cuba, compiled from authoritative and openly available
+sources for GIS, spatial analysis and programmatic use.
 
 [![DOI](https://zenodo.org/badge/1375041188.svg)](https://doi.org/10.5281/zenodo.22927747)
 
-## Available data
+## Administrative data
 
-### Administrative Geographic Names
+Names, codes, relationships and geometry for Cuba’s **15 provinces, 167 ordinary
+municipalities and the special municipality of Isla de la Juventud**, following
+the official **Codificador de la División Político-Administrativa (CoDPA)**.
 
-Official geographic names of Cuban provinces, municipalities, and the special municipality of Isla de la Juventud, based on the **Codificador de la División Político-Administrativa (CoDPA)**, with point locations and cross-references to external geographic databases.
+![División político-administrativa de Cuba](administrative_map.png)
 
-Available as:
+[Administrative Geographic Names](data/administrative-geographic-names/) — 183 name records with CoDPA codes, province relationships, point locations and source cross-references. **CC BY 4.0.**
 
-- GeoParquet
-- GeoJSON
-- GeoPackage
+[Administrative Geometry](data/administrative-geometry/) — 183 administrative polygon records linked to the geographic names. Province and municipality areas overlap by design. **ODbL 1.0.**
 
-[`data/administrative-geographic-names/`](data/administrative-geographic-names/)
+Explore the [names and hierarchy](examples/administrative_geographic_names.ipynb)
+or [create the administrative map](examples/administrative_map.ipynb).
 
-### Administrative Geometry
+## Hydrographic data
 
-Administrative polygons for Cuban provinces, municipalities, and the special municipality of Isla de la Juventud, identified by CoDPA codes and linked to the geographic names dataset.
+Consolidated geographic names, modelled river and channel networks, catchments
+and water-body polygons. Names and geometry are independent products connected
+through direct identifiers; detailed feature types distinguish streams, canals,
+channels, ditches, lakes, lagoons, reservoirs and other water features.
 
-Available as:
+![Hidrografía de Cuba](hydrography_map.png)
 
-- GeoParquet
-- GeoJSON
-- GeoPackage
+[Water Geographic Names](data/water-geographic-names/) — 3,687 consolidated objects with preferred names, recorded alternatives, detailed types and source references. **ODbL 1.0.**
 
-[`data/administrative-geometry/`](data/administrative-geometry/)
+[River and Channel Centerlines](data/river-centerlines/) — 56,594 reaches with drainage topology, stream order, direct name references and naming status, including explicit uncertain and withheld assignments. **ODbL 1.0.**
 
-### Cuba Coastline
+[River Catchments](data/river-catchments/) — 56,594 reach-linked polygons. Source ring defects were repaired without boundary displacement; source limitations remain documented. **CC BY 4.0.**
 
-Line geometry of Cuba’s coastal boundary, derived from the exterior rings of the land polygons. Available as GeoParquet, GeoJSON, and GeoPackage under ODbL 1.0.
+[Water-body Geometry](data/water-body-geometry/) — 1,148 HydroLAKES polygons with physical attributes and direct name references. Detailed named feature types are in the names registry. **CC BY 4.0.**
 
-[`data/coastline/`](data/coastline/)
+[Supplementary Water Geometry](data/supplementary-water-geometry/) — 372 observations representing 370 source features outside reference coverage. Multiple observations retain their source identities. **ODbL 1.0.**
 
-### Cuba Land Polygons
+Explore [water geographic names](examples/water_geographic_names.ipynb),
+[create the hydrography map and count drainage systems](examples/hydrography_map.ipynb),
+or [map systems associated with ONEI’s river list](examples/onei_river_systems.ipynb).
 
-Polygon footprint covering land, islands, and inland water. Available as GeoParquet, GeoJSON, and GeoPackage under ODbL 1.0.
+## Coastline and land polygons
 
-[`data/land-polygons/`](data/land-polygons/)
+Complementary line and polygon products derived from the project’s nonmarine
+classification. The polygon footprint includes islands and inland water.
 
-These two products are now present in the repository but are not included in the v1.0.0 release. Their release version and DOI will be assigned separately.
+[Coastline](data/coastline/) — The full land-polygon boundary, including exterior rings and boundaries around interior holes. **ODbL 1.0.**
 
-### Water Geographic Names
+[Land Polygons](data/land-polygons/) — Nonmarine polygon footprint for coverage, masking and map backgrounds. **ODbL 1.0.**
 
-3,687 consolidated name objects with detailed feature types, preferred labels, recorded alternatives and source evidence. Available as Parquet, CSV and GeoPackage attribute tables.
+Both layers provide the geographic context used in the hydrography map above.
+Their derivation and resolution are documented in the product metadata.
 
-[`data/water-geographic-names/`](data/water-geographic-names/)
+## Reference tables
 
-### River and Channel Centerlines
+Readable CSV tables provide names, geographic context and identifiers for dataset
+lookup. See [reading guidance and limitations](reference/README.md).
 
-56,594 modeled drainage centerline reaches with drainage topology, direct name-object references and naming status. Geographic uncertainty and withheld assignments are explicit columns. Available as GeoParquet, gzip-compressed GeoJSON and gzip-compressed GeoPackage.
+- [Administrative geographic names](reference/cuba_administrative_geographic_names.csv)
+- [Water names](reference/cuba_water_names_reference.csv)
+- [ONEI river correspondence](reference/cuba_onei_river_correspondence.csv)
 
-[`data/river-centerlines/`](data/river-centerlines/)
+ONEI correspondences and the example’s course selections are inferred associations;
+they are not independently verified river identities.
 
-These additions are not part of v1.0.0; no new release or DOI has been assigned.
+## Formats and documentation
 
-## Human-readable reference tables
+Spatial datasets are available as **GeoParquet, GeoJSON and GeoPackage**. Water
+Geographic Names is available as **Parquet, CSV and GeoPackage attributes**.
+River-centerline GeoJSON and GeoPackage files, and all three river-catchment
+formats, use **gzip compression** (`.gz`). Product READMEs link to the files.
 
-[Administrative geographic names](reference/cuba_administrative_geographic_names.csv), [Water names](reference/cuba_water_names_reference.csv) and [ONEI river correspondence](reference/cuba_onei_river_correspondence.csv) include readable descriptions and project object IDs. See [reading guidance and limitations](reference/README.md).
-
-## Additional hydrographic products
-
-- [Water-body geometry](data/water-body-geometry/): 1,148 HydroLAKES polygons with direct name references. One source ring defect repaired without boundary displacement; detailed feature types remain in the name registry.
-- [River catchments](data/river-catchments/): 56,594 reach-linked catchment polygons. The 979 source ring defects have been repaired without boundary displacement; beta-source limitations remain documented.
-- [Supplementary water geometry](data/supplementary-water-geometry/): 372 valid source observations representing 370 source features outside reference coverage. Multiple observations of a source feature are retained; these are not consolidated reference-network objects.
-
-These additions are not part of v1.0.0. No new release or DOI has been assigned. Field definitions are documented and all product metadata passes ISO 19115-3 XML Schema validation.
-
-## Examples
-
-The [`examples/`](examples/) directory contains Jupyter notebooks demonstrating how to explore, visualize, and use the published datasets.
-
-## Documentation
+Each data folder includes a README, field definitions, ISO 19115-3 metadata and
+SHA-256 checksums. All nine product metadata files pass XML Schema validation.
+The self-contained notebooks in [`examples/`](examples/) demonstrate loading,
+linking, exploring and mapping the datasets.
 
 - [Data development](docs/data_development.md)
-- [References](docs/references.md)
+- [Source references](docs/references.md)
 - [Contributing](docs/contributing.md)
 
-## Citation
+## Release status and citation
 
-- **Version 1.0.0:** [10.5281/zenodo.22927748](https://doi.org/10.5281/zenodo.22927748). Use this DOI when citing this release.
-- **Project (all versions):** [10.5281/zenodo.22927747](https://doi.org/10.5281/zenodo.22927747). This concept DOI is also used by the badge above.
+**v1.0.0 covers the original administrative datasets.** The hydrographic and
+coastal products are present in the repository; their release version and DOI
+have not yet been assigned.
+
+- **Version 1.0.0:** [10.5281/zenodo.22927748](https://doi.org/10.5281/zenodo.22927748).
+- **Project, all versions:** [10.5281/zenodo.22927747](https://doi.org/10.5281/zenodo.22927747), also used by the badge above.
+
+See [CITATION.cff](CITATION.cff) for the released citation metadata.
 
 ## License
 
-Unless otherwise indicated, data in this repository are available under **CC BY 4.0**.
-
-`cuba_administrative_geometry.*`, `cuba_coastline.*`, and `cuba_land_polygons.*`, `cuba_water_geographic_names.*`, `cuba_river_centerlines.*`, `cuba_supplementary_water_geometry.*`, and the hydrography reference CSVs are available under the **Open Database License (ODbL) 1.0**.
-
-See [LICENSE.md](LICENSE.md) for details.
+**CC BY 4.0** is the default. Products identified above as **ODbL 1.0** retain
+that license across all formats; the hydrography reference CSVs are also ODbL 1.0.
+See [LICENSE.md](LICENSE.md), [reference-table terms](reference/LICENSE.md) and
+individual product metadata for attribution and license details.
 
 ## Support
 
-This is an independent project. If you find it useful and would like to support the work behind it, you can [buy me a coffee](https://buymeacoffee.com/NotTheMapGuy).
+This is an independent project. If you find it useful and would like to support
+the work behind it, you can [buy me a coffee](https://buymeacoffee.com/NotTheMapGuy).
