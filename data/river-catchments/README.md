@@ -1,6 +1,6 @@
 # Cuba River Catchments
 
-[GeoParquet](cuba_river_catchments.parquet) · [GeoJSON](cuba_river_catchments.geojson.gz) · [GeoPackage](cuba_river_catchments.gpkg.gz)
+[GeoParquet](cuba_river_catchments.parquet.gz) · [GeoJSON](cuba_river_catchments.geojson.gz) · [GeoPackage](cuba_river_catchments.gpkg.gz)
 
 ## Use
 
@@ -20,4 +20,10 @@ GeoJSON is losslessly gzip-compressed; decompress it for tools without gzip supp
 
 This product is now present in the repository but is not part of the existing release. Formal ISO XML schema validation remains pending.
 
-GeoPackage is also losslessly gzip-compressed; decompress it before opening in GIS software. GeoParquet is available without a separate decompression step.
+GeoPackage is also losslessly gzip-compressed; decompress it before opening in GIS software. GeoParquet is also gzip-compressed; decompress it before use.
+
+All distributed geometries pass validity checks. Duplicate source identifiers and constant per-feature validity fields are omitted; original source validity and repair provenance, where applicable, remain recorded.
+
+Source `Shape_Length` and `Shape_Area` measurements are omitted; they remain available from the original HydroSHEDS dataset.
+
+Files ending in `.gz` use lossless gzip compression. Decompress them before use in software that does not support the compressed distribution directly.

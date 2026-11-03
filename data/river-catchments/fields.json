@@ -21,33 +21,9 @@
     "nullable": true
   },
   {
-    "field": "HYBAS_ID",
-    "type": "integer",
-    "description": "Retained source/workflow field HYBAS_ID; values are exported without reinterpretation.",
-    "nullable": true
-  },
-  {
     "field": "STRM_ID",
     "type": "integer",
     "description": "Original HydroSHEDS reach identifier.",
-    "nullable": true
-  },
-  {
-    "field": "Shape_Length",
-    "type": "number",
-    "description": "Retained source/workflow field Shape_Length; values are exported without reinterpretation.",
-    "nullable": true
-  },
-  {
-    "field": "Shape_Area",
-    "type": "number",
-    "description": "Retained source/workflow field Shape_Area; values are exported without reinterpretation.",
-    "nullable": true
-  },
-  {
-    "field": "source_objectid",
-    "type": "integer",
-    "description": "Retained source/workflow field source_objectid; values are exported without reinterpretation.",
     "nullable": true
   },
   {
@@ -69,18 +45,6 @@
     "field": "reference_reach_id",
     "type": "string",
     "description": "UUIDv7 link to the reach associated with this catchment; distinct from catchment.id.",
-    "nullable": true
-  },
-  {
-    "field": "geometry_valid",
-    "type": "boolean",
-    "description": "GEOS validity of the distributed geometry after any recorded repair.",
-    "nullable": true
-  },
-  {
-    "field": "geometry_validity_reason",
-    "type": "string",
-    "description": "GEOS validity explanation for the distributed geometry after any recorded repair.",
     "nullable": true
   },
   {

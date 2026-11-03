@@ -56,7 +56,7 @@ These two products are now present in the repository but are not included in the
 
 ### River and Channel Centerlines
 
-56,594 modeled drainage centerline reaches with drainage topology, direct name-object references and naming status. Geographic uncertainty and withheld assignments are explicit columns. Available as GeoParquet, gzip-compressed GeoJSON and GeoPackage.
+56,594 modeled drainage centerline reaches with drainage topology, direct name-object references and naming status. Geographic uncertainty and withheld assignments are explicit columns. Available as GeoParquet, gzip-compressed GeoJSON and gzip-compressed GeoPackage.
 
 [`data/river-centerlines/`](data/river-centerlines/)
 

@@ -230,7 +230,7 @@
           <mrd:onLine>
             <cit:CI_OnlineResource>
               <cit:linkage>
-                <gco:CharacterString>cuba_river_catchments.parquet</gco:CharacterString>
+                <gco:CharacterString>cuba_river_catchments.parquet.gz</gco:CharacterString>
               </cit:linkage>
             </cit:CI_OnlineResource>
           </mrd:onLine>

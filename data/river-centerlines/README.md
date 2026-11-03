@@ -2,7 +2,7 @@
 
 Modeled river and channel drainage centerlines with drainage topology, direct name references and naming status. Flagged coastal extensions are project-derived. These lines do not represent surveyed channel boundaries or water-surface widths. Detailed feature types are retained in the referenced name objects.
 
-[GeoParquet](cuba_river_centerlines.parquet) · [GeoJSON](cuba_river_centerlines.geojson.gz) · [GeoPackage](cuba_river_centerlines.gpkg)
+[GeoParquet](cuba_river_centerlines.parquet) · [GeoJSON](cuba_river_centerlines.geojson.gz) · [GeoPackage](cuba_river_centerlines.gpkg.gz)
 
 ## Use
 
@@ -25,3 +25,8 @@ The GeoJSON distribution uses lossless gzip compression; decompress it before op
 See [water names](../../reference/cuba_water_names_reference.csv) and [ONEI river correspondence](../../reference/cuba_onei_river_correspondence.csv), with [reading guidance](../../reference/README.md).
 
 This repository addition is not part of the existing release. Detailed feature types are retained in the name registry. Water-body geometry and the referenced geometry IDs are available in `../water-body-geometry/`. Formal ISO XML schema validation remains pending.
+
+All distributed geometries pass validity checks. Duplicate source identifiers and constant per-feature validity fields are omitted; original source validity and repair provenance, where applicable, remain recorded.
+Preferred labels are obtained through `gazetteer_id` in the names dataset. `naming_status` retains applicability and uncertainty; alternative and contender references retain their distinct roles.
+
+Files ending in `.gz` use lossless gzip compression. Decompress them before use in software that does not support the compressed distribution directly.

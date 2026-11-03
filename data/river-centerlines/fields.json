@@ -27,12 +27,6 @@
     "nullable": true
   },
   {
-    "field": "GRID_CODE",
-    "type": "integer",
-    "description": "Retained source/workflow field GRID_CODE; values are exported without reinterpretation.",
-    "nullable": true
-  },
-  {
     "field": "MAIN_BAS",
     "type": "integer",
     "description": "HydroSHEDS watershed identifier; scope of river name identities.",
@@ -75,12 +69,6 @@
     "nullable": true
   },
   {
-    "field": "source_objectid",
-    "type": "integer",
-    "description": "Retained source/workflow field source_objectid; values are exported without reinterpretation.",
-    "nullable": true
-  },
-  {
     "field": "extended_to_coast",
     "type": "boolean",
     "description": "Retained source/workflow field extended_to_coast; values are exported without reinterpretation.",
@@ -108,18 +96,6 @@
     ]
   },
   {
-    "field": "geometry_valid",
-    "type": "boolean",
-    "description": "Whether the exported source geometry passes GEOS validity checks; no repair is applied.",
-    "nullable": true
-  },
-  {
-    "field": "geometry_validity_reason",
-    "type": "string",
-    "description": "GEOS validity explanation for the exported coordinates.",
-    "nullable": true
-  },
-  {
     "field": "gazetteer_id",
     "type": "string",
     "description": "UUIDv7 foreign key to water geographic names.id.",
@@ -142,12 +118,6 @@
     "nullable": true
   },
   {
-    "field": "name_reference_status",
-    "type": "string",
-    "description": "Whether a preferred name is selected, multiple accepted names have no preference, or no name is assigned.",
-    "nullable": true
-  },
-  {
     "field": "name_assignment_status",
     "type": "string",
     "description": "Workflow classification of the reach name assignment, including direct, propagated, alternative, unnamed or withheld outcomes.",
@@ -166,12 +136,6 @@
     "nullable": true
   },
   {
-    "field": "preferred_name",
-    "type": "string",
-    "description": "Preferred recorded label; never a reconstructed spelling.",
-    "nullable": true
-  },
-  {
     "field": "contender_gazetteer_ids",
     "type": "string",
     "description": "JSON array of competing name UUIDs; not assignments.",
@@ -181,12 +145,6 @@
     "field": "pending_type_review_gazetteer_ids",
     "type": "string",
     "description": "JSON array of unselected type-pending name UUIDs.",
-    "nullable": true
-  },
-  {
-    "field": "readable_status",
-    "type": "string",
-    "description": "Human-readable interpretation of naming_status; uncertain selections and withheld assignments remain explicit.",
     "nullable": true
   }
 ]
