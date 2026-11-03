@@ -83,20 +83,19 @@ linking, exploring and mapping the datasets.
 - [Source references](docs/references.md)
 - [Contributing](docs/contributing.md)
 
-## Release status and citation
+## Release and citation
 
-**v1.0.0 covers the original administrative datasets.** The hydrographic and
-coastal products are present in the repository; their release version and DOI
-have not yet been assigned.
+**Version v2.0.0** includes the administrative, hydrographic and coastal products.
 
-**Published administrative release — v1.0.0:**
+[![Zenodo DOI for v2.0.0](https://zenodo.org/badge/DOI/10.5281/zenodo.23931588.svg)](https://doi.org/10.5281/zenodo.23931588)
 
-[![Zenodo DOI for the v1.0.0 administrative release](https://zenodo.org/badge/DOI/10.5281/zenodo.22927748.svg)](https://doi.org/10.5281/zenodo.22927748)
-
-- **Version 1.0.0:** [10.5281/zenodo.22927748](https://doi.org/10.5281/zenodo.22927748).
+- **Version 2.0.0:** [10.5281/zenodo.23931588](https://doi.org/10.5281/zenodo.23931588).
+- **Version 1.0.0, original administrative release:** [10.5281/zenodo.22927748](https://doi.org/10.5281/zenodo.22927748).
 - **Project, all versions:** [10.5281/zenodo.22927747](https://doi.org/10.5281/zenodo.22927747).
 
-See [CITATION.cff](CITATION.cff) for the released citation metadata.
+Batista, J. L. (2026). *Cuba Geographic Data* (Version v2.0.0) [Computer software]. Zenodo. [https://doi.org/10.5281/zenodo.23931588](https://doi.org/10.5281/zenodo.23931588)
+
+Citation metadata is maintained in [CITATION.cff](CITATION.cff).
 
 ## License
 
