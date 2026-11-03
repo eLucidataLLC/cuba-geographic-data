@@ -3,8 +3,6 @@
 Open geographic datasets for Cuba, compiled from authoritative and openly available
 sources for GIS, spatial analysis and programmatic use.
 
-[![DOI](https://zenodo.org/badge/1375041188.svg)](https://doi.org/10.5281/zenodo.22927747)
-
 ## Administrative data
 
 Names, codes, relationships and geometry for Cuba’s **15 provinces, 167 ordinary
@@ -69,8 +67,10 @@ they are not independently verified river identities.
 
 ## Formats and documentation
 
-Spatial datasets are available as **GeoParquet, GeoJSON and GeoPackage**. Water
-Geographic Names is available as **Parquet, CSV and GeoPackage attributes**.
+Spatial datasets are available as **GeoParquet, GeoJSON and GeoPackage**. The
+Water Geographic Names registry is distributed as **Parquet, CSV and GeoPackage
+attributes**. Its [dataset CSV](data/water-geographic-names/cuba_water_geographic_names.csv)
+is separate from the readable [water-name reference CSV](reference/cuba_water_names_reference.csv).
 River-centerline GeoJSON and GeoPackage files, and all three river-catchment
 formats, use **gzip compression** (`.gz`). Product READMEs link to the files.
 
@@ -89,8 +89,12 @@ linking, exploring and mapping the datasets.
 coastal products are present in the repository; their release version and DOI
 have not yet been assigned.
 
+**Published administrative release — v1.0.0:**
+
+[![Zenodo DOI for the v1.0.0 administrative release](https://zenodo.org/badge/DOI/10.5281/zenodo.22927748.svg)](https://doi.org/10.5281/zenodo.22927748)
+
 - **Version 1.0.0:** [10.5281/zenodo.22927748](https://doi.org/10.5281/zenodo.22927748).
-- **Project, all versions:** [10.5281/zenodo.22927747](https://doi.org/10.5281/zenodo.22927747), also used by the badge above.
+- **Project, all versions:** [10.5281/zenodo.22927747](https://doi.org/10.5281/zenodo.22927747).
 
 See [CITATION.cff](CITATION.cff) for the released citation metadata.
 
