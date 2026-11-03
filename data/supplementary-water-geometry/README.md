@@ -17,3 +17,7 @@ The GeoPackage table/layer is `cuba_supplementary_water_geometry`. Alternative f
 Cross-product references identify related records; they do not require copying another product into this folder.
 
 This product is now present in the repository but is not part of the existing release. Metadata passes ISO 19115-3 XML Schema validation.
+
+Repeated validity diagnostics and internal processing fields are omitted from the public table. Relevant derivation details are documented in metadata; retained repair methods and naming status remain explicit.
+
+Repeated validity diagnostics and internal processing fields are omitted from the public table. Relevant derivation details are documented in metadata; retained repair methods and naming status remain explicit.

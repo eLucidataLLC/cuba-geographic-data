@@ -2,33 +2,33 @@
   "files": [
     {
       "filename": "README.md",
-      "bytes": 2396,
-      "sha256": "07aed1a962710676b200fc661ea65c2ecb5d001bca2af592b02e9bcd7a92bd8a"
+      "bytes": 2850,
+      "sha256": "27c5baa1e7a5f5d3c7aa107522f7d100aa73625cf70a0c2837da427ed67271f4"
     },
     {
       "filename": "cuba_river_centerlines.geojson.gz",
-      "bytes": 13997812,
-      "sha256": "ee285659e9e578f1c1dbb659f50d1424defd6ede520356a785b890c9eba73f0f"
+      "bytes": 13425526,
+      "sha256": "fb846ae0084d90b535979657fae7914ee935d25c8ab98a8f6fac9093bd5a0fd0"
     },
     {
       "filename": "cuba_river_centerlines.gpkg.gz",
-      "bytes": 14466413,
-      "sha256": "1873b5f178ee4ef39e915a0b3abe5f52cf04db0415fb8c64cabc0dceb9f89cf7"
+      "bytes": 13793894,
+      "sha256": "b59f760b22decb316ebdcf15d5c2325b12eba7cf9fc6b922d63c4646bfb0c81e"
     },
     {
       "filename": "cuba_river_centerlines.parquet",
-      "bytes": 17276054,
-      "sha256": "2927d7899b325c8809143a4f20c81b9452d994f2c88d9fdf505e12e2f2b10b32"
+      "bytes": 16440422,
+      "sha256": "afe058d4350671e7f78f0ce980c4e6b1ef422e253ba4a286b7c6bbdedd0d131d"
     },
     {
       "filename": "fields.json",
-      "bytes": 4669,
-      "sha256": "d393138547d21ea1688b8a11dbc6805bdb3c1aef873420c4d242b8c8d0ac3914"
+      "bytes": 2860,
+      "sha256": "642866882a4a3cb69b7f9234f87e4e1a25626ff06cb64c575a619e4c250d06d6"
     },
     {
       "filename": "metadata.xml",
-      "bytes": 15211,
-      "sha256": "2c3371769ac4db96ac747f520937650dde0a8b0bd5f27443d7d83d43d73c12f9"
+      "bytes": 15593,
+      "sha256": "d44fac5983118e4c4806a14a7ea2ee0f0f1655fef86ac2dfc7bb036fffc04821"
     }
   ]
 }

@@ -15,3 +15,5 @@ The GeoPackage table/layer is `cuba_land_polygons`. Alternative formats represen
 - [Checksums](checksums.json): filenames, byte sizes and SHA-256 hashes for download verification.
 
 Cross-product references identify related records; they do not require copying another product into this folder.
+
+Repeated validity diagnostics and internal processing fields are omitted from the public table. Relevant derivation details are documented in metadata; retained repair methods and naming status remain explicit.

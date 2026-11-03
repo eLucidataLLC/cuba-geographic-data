@@ -26,7 +26,11 @@ See [water names](../../reference/cuba_water_names_reference.csv) and [ONEI rive
 
 This repository addition is not part of the existing release. Detailed feature types are retained in the name registry. Water-body geometry and the referenced geometry IDs are available in `../water-body-geometry/`. Metadata passes ISO 19115-3 XML Schema validation.
 
-All distributed geometries pass validity checks. Duplicate source identifiers and constant per-feature validity fields are omitted; original source validity and repair provenance, where applicable, remain recorded.
+All distributed geometries pass validity checks. Duplicate source identifiers and constant per-feature validity fields are omitted; the repair method, where applicable, remains recorded; original validity diagnostics stay in the internal audit.
 Preferred labels are obtained through `gazetteer_id` in the names dataset. `naming_status` retains applicability and uncertainty; alternative and contender references retain their distinct roles.
 
 Files ending in `.gz` use lossless gzip compression. Decompress them before use in software that does not support the compressed distribution directly.
+
+Repeated validity diagnostics and internal processing fields are omitted from the public table. Relevant derivation details are documented in metadata; retained repair methods and naming status remain explicit.
+
+Repeated validity diagnostics and internal processing fields are omitted from the public table. Relevant derivation details are documented in metadata; retained repair methods and naming status remain explicit.

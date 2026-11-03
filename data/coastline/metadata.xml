@@ -285,7 +285,7 @@
   <mdb:resourceLineage>
     <mrl:LI_Lineage>
       <mrl:statement>
-        <gco:CharacterString>New derived geometry objects created from polygon exterior rings, with source_outline_id referencing the generated outline objects. No smoothing.</gco:CharacterString>
+        <gco:CharacterString>New derived geometry objects created from polygon exterior rings, with source_outline_id referencing the generated outline objects. No smoothing. Public schema omits repeated validity diagnostics and internal processing fields. Original evidence remains in the workflow audit; public IDs, geometry and retained attributes are unchanged.</gco:CharacterString>
       </mrl:statement>
       <mrl:source>
         <mrl:LI_Source>

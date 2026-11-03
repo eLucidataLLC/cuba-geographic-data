@@ -2,33 +2,33 @@
   "files": [
     {
       "filename": "README.md",
-      "bytes": 960,
-      "sha256": "b0506a6ce87845f37d174eaa2c82a7610548b167cbe4dfc8643950d741a8f5c1"
+      "bytes": 1172,
+      "sha256": "025c555ca0da85d6c50ce0878abc6c37f1c2b0aaa7cccde26abb8831853beefb"
     },
     {
       "filename": "cuba_land_polygons.geojson",
-      "bytes": 21246990,
-      "sha256": "ad2cc633b9883f5bdab51d489ab3bc2c7ebe91ff42c02c730a0a4d1e3bb1e319"
+      "bytes": 21246836,
+      "sha256": "b226a6c074d5668cd50f98e9e57b1960dbb58a5521f75c35214a490d1a54ee82"
     },
     {
       "filename": "cuba_land_polygons.gpkg",
       "bytes": 11173888,
-      "sha256": "7e21f7acae207aef4f1ca6de3d20fe9f911693f54816e9bd26dfad0574a9057e"
+      "sha256": "d198d9ae49ca438efc85449376a5bdd5e9bc49d7270b465174df36b34536e925"
     },
     {
       "filename": "cuba_land_polygons.parquet",
-      "bytes": 11065099,
-      "sha256": "6fd7c8e4f546d218da16361d079f583928f758d955c2ad2be5ddc1c7d2d27097"
+      "bytes": 11061465,
+      "sha256": "29944f688105b28e05b00e419938aa66e606a8af5cf45c1f3ecc39b59d93c5e1"
     },
     {
       "filename": "fields.json",
-      "bytes": 1737,
-      "sha256": "d02c543d4cfb895fce2106607e1e3678924d50fca7c7c42c398493f31b9a2af2"
+      "bytes": 489,
+      "sha256": "59cc411d84cff29902d4cd5ceee83da62be2c3678bde0c6f7ac25da519e625ab"
     },
     {
       "filename": "metadata.xml",
-      "bytes": 14367,
-      "sha256": "341eaee15b06f2679312306f7ec168859965345ef74c48ca6b9cb4d3238d7f89"
+      "bytes": 14683,
+      "sha256": "78c581022323c9f9fdd80fb42004b9c41803fb82a7ec3a097daaad7536d78619"
     }
   ]
 }

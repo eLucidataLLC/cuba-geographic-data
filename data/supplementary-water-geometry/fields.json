@@ -9,12 +9,6 @@
     "unique": true
   },
   {
-    "field": "input_record_index",
-    "type": "integer",
-    "description": "Internal evidence-row index in the source workflow; not a stable public feature identifier.",
-    "nullable": true
-  },
-  {
     "field": "source",
     "type": "string",
     "description": "Source family or consolidated identity origin used to construct the record; detailed contributing sources are retained separately.",
@@ -27,55 +21,15 @@
     "nullable": true
   },
   {
-    "field": "reference_dataset",
-    "type": "string",
-    "description": "Reference coverage used to classify this observation: HydroSHEDS or HydroLAKES.",
-    "nullable": true,
-    "allowed_values": [
-      "HydroSHEDS",
-      "HydroLAKES"
-    ]
-  },
-  {
-    "field": "inclusion_reason",
-    "type": "string",
-    "description": "Why the source observation was retained outside reference coverage: not_represented_in_hydrosheds or not_represented_in_hydrolakes.",
-    "nullable": true
-  },
-  {
-    "field": "validation_status",
-    "type": "string",
-    "description": "supplementary_geometry identifies a retained source observation, not a validated reference-network identity.",
-    "nullable": true
-  },
-  {
     "field": "name",
     "type": "string",
     "description": "Verbatim name of the source observation; not a selected consolidated name label.",
     "nullable": true
   },
   {
-    "field": "alternative_names",
-    "type": "string",
-    "description": "JSON array of other recorded names belonging to this name object.",
-    "nullable": true
-  },
-  {
     "field": "source_feature_type",
     "type": "string",
     "description": "Original source feature-type code or label; interpreted in its source vocabulary.",
-    "nullable": true
-  },
-  {
-    "field": "source_feature_class",
-    "type": "string",
-    "description": "Original source broad feature class; distinct from the detailed feature type.",
-    "nullable": true
-  },
-  {
-    "field": "source_provenance",
-    "type": "string",
-    "description": "Recorded source provenance as supplied by the workflow; null means not recorded, not that the feature has no source.",
     "nullable": true
   },
   {
@@ -87,17 +41,5 @@
       "LineString",
       "Polygon"
     ]
-  },
-  {
-    "field": "geometry_valid",
-    "type": "boolean",
-    "description": "Whether the exported source geometry passes GEOS validity checks; no repair is applied.",
-    "nullable": true
-  },
-  {
-    "field": "geometry_validity_reason",
-    "type": "string",
-    "description": "GEOS validity explanation for the exported coordinates.",
-    "nullable": true
   }
 ]

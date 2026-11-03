@@ -15,27 +15,6 @@
     "unique": true
   },
   {
-    "field": "Lake_name",
-    "type": "string",
-    "description": "HydroLAKES source label; independent of the project preferred name.",
-    "nullable": true,
-    "definition_source": "https://data.hydrosheds.org/file/technical-documentation/HydroLAKES_TechDoc_v10.pdf"
-  },
-  {
-    "field": "Country",
-    "type": "string",
-    "description": "Source country designation, based on the outlet for transboundary waters.",
-    "nullable": true,
-    "definition_source": "https://data.hydrosheds.org/file/technical-documentation/HydroLAKES_TechDoc_v10.pdf"
-  },
-  {
-    "field": "Continent",
-    "type": "string",
-    "description": "Source continental designation.",
-    "nullable": true,
-    "definition_source": "https://data.hydrosheds.org/file/technical-documentation/HydroLAKES_TechDoc_v10.pdf"
-  },
-  {
     "field": "Poly_src",
     "type": "string",
     "description": "Dataset supplying the source outline.",
@@ -178,22 +157,6 @@
     "definition_source": "https://data.hydrosheds.org/file/technical-documentation/HydroLAKES_TechDoc_v10.pdf"
   },
   {
-    "field": "Shape_Length",
-    "type": "number",
-    "description": "Source GIS perimeter in geographic coordinate units; not the metric Shore_len attribute. Not recomputed after ring repair.",
-    "nullable": true,
-    "units": "degrees",
-    "definition_source": "https://data.hydrosheds.org/file/technical-documentation/HydroLAKES_TechDoc_v10.pdf"
-  },
-  {
-    "field": "Shape_Area",
-    "type": "number",
-    "description": "Source GIS area in geographic coordinate units; not the metric Lake_area attribute. Not recomputed after ring repair.",
-    "nullable": true,
-    "units": "square degrees",
-    "definition_source": "https://data.hydrosheds.org/file/technical-documentation/HydroLAKES_TechDoc_v10.pdf"
-  },
-  {
     "field": "geometry",
     "type": "geometry",
     "description": "Spatial representation of this record; CRS and coverage are documented in metadata.xml.",
@@ -201,18 +164,6 @@
     "geometry_types": [
       "MultiPolygon"
     ]
-  },
-  {
-    "field": "geometry_valid",
-    "type": "boolean",
-    "description": "GEOS validity of the distributed geometry after any recorded repair.",
-    "nullable": true
-  },
-  {
-    "field": "geometry_validity_reason",
-    "type": "string",
-    "description": "GEOS validity explanation for the distributed geometry after any recorded repair.",
-    "nullable": true
   },
   {
     "field": "gazetteer_id",
@@ -234,24 +185,6 @@
     "field": "naming_status",
     "type": "string",
     "description": "Recorded reach applicability status or accepted/not_applicable water-body association status.",
-    "nullable": true
-  },
-  {
-    "field": "name_reference_status",
-    "type": "string",
-    "description": "Whether a preferred name is selected, multiple accepted names have no preference, or no name is assigned.",
-    "nullable": true
-  },
-  {
-    "field": "source_geometry_valid",
-    "type": "boolean",
-    "description": "Validity of the original source polygon before the recorded ring repair.",
-    "nullable": true
-  },
-  {
-    "field": "source_geometry_validity_reason",
-    "type": "string",
-    "description": "GEOS validity explanation for the original source polygon before repair.",
     "nullable": true
   },
   {

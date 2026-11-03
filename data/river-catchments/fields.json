@@ -50,18 +50,6 @@
     "nullable": true
   },
   {
-    "field": "source_geometry_valid",
-    "type": "boolean",
-    "description": "Validity of the original source polygon before the recorded ring repair.",
-    "nullable": true
-  },
-  {
-    "field": "source_geometry_validity_reason",
-    "type": "string",
-    "description": "GEOS validity explanation for the original source polygon before repair.",
-    "nullable": true
-  },
-  {
     "field": "geometry_repair_method",
     "type": "string",
     "description": "none for unchanged polygons; make_valid_linework_boundary_preserving reorganizes self-touching rings without changing coordinates, boundary point sets or polygon-part counts.",

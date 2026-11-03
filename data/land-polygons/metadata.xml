@@ -285,7 +285,7 @@
   <mdb:resourceLineage>
     <mrl:LI_Lineage>
       <mrl:statement>
-        <gco:CharacterString>Canonical H3 resolution-11 cells classified as nonmarine are dissolved by shared edges and polygon union without coarsening. The marine classification combines permanent-water status with cell-centre intersections against Overture ocean polygons. The footprint includes islands and inland water. Processing uses a precision grid of 1e-10 degrees. Source coordinates are retained without smoothing; project UUIDs identify the dissolved geometry objects. This polygon footprint is not a DEM elevation contour or a surveyed shoreline.</gco:CharacterString>
+        <gco:CharacterString>Canonical H3 resolution-11 cells classified as nonmarine are dissolved by shared edges and polygon union without coarsening. The marine classification combines permanent-water status with cell-centre intersections against Overture ocean polygons. The footprint includes islands and inland water. Processing uses a precision grid of 1e-10 degrees. Source coordinates are retained without smoothing; project UUIDs identify the dissolved geometry objects. This polygon footprint is not a DEM elevation contour or a surveyed shoreline. Public schema omits repeated validity diagnostics and internal processing fields. Original evidence remains in the workflow audit; public IDs, geometry and retained attributes are unchanged. Source processing summary: {"nonmarine_cells": 61088885, "h3_resolution": 11, "polygon_parts": 1836, "interior_rings": 172}.</gco:CharacterString>
       </mrl:statement>
       <mrl:source>
         <mrl:LI_Source>

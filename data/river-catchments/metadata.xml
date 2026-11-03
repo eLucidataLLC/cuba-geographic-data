@@ -285,7 +285,7 @@
   <mdb:resourceLineage>
     <mrl:LI_Lineage>
       <mrl:statement>
-        <gco:CharacterString>Distinct catchment objects created with UUIDv7 IDs; original polygon coordinates and source identifiers retained. reference_reach_id links each catchment to its reach. Publication repair reorganized self-touching rings in 979 polygons into valid exterior/interior rings. Coordinate sets, boundary point sets, polygon-part counts, IDs and all nongeometry source attributes were preserved. Linework and structure make_valid results agreed. Original validity and repair method are recorded per feature; original source datasets are unchanged.</gco:CharacterString>
+        <gco:CharacterString>Distinct catchment objects created with UUIDv7 IDs; original polygon coordinates and source identifiers retained. reference_reach_id links each catchment to its reach. Publication repair reorganized self-touching rings in 979 polygons into valid exterior/interior rings. Coordinate sets, boundary point sets, polygon-part counts, IDs and all nongeometry source attributes were preserved. Linework and structure make_valid results agreed. Repair method is recorded per feature; original validity diagnostics remain in the internal audit and original source datasets are unchanged. Public schema omits repeated validity diagnostics and internal processing fields. Original evidence remains in the workflow audit; public IDs, geometry and retained attributes are unchanged.</gco:CharacterString>
       </mrl:statement>
       <mrl:source>
         <mrl:LI_Source>

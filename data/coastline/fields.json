@@ -26,17 +26,5 @@
     "geometry_types": [
       "MultiLineString"
     ]
-  },
-  {
-    "field": "geometry_valid",
-    "type": "boolean",
-    "description": "Result of the GEOS geometry-validity check; true means valid. No repair is implied.",
-    "nullable": false
-  },
-  {
-    "field": "geometry_validity_reason",
-    "type": "string",
-    "description": "GEOS validity explanation; Valid Geometry indicates a passed check.",
-    "nullable": false
   }
 ]

@@ -33,30 +33,11 @@
     "nullable": true
   },
   {
-    "field": "NODE_ID_UP",
-    "type": "integer",
-    "description": "Original HydroSHEDS upstream network-node identifier, not a reach or project UUID.",
-    "nullable": true
-  },
-  {
-    "field": "NODE_ID_DOWN",
-    "type": "integer",
-    "description": "Original HydroSHEDS downstream network-node identifier, not a reach or project UUID.",
-    "nullable": true
-  },
-  {
     "field": "LENGTH_KM",
     "type": "number",
     "description": "Source HydroSHEDS reach length; not recalculated to include project coastal extensions.",
     "nullable": true,
     "units": "km"
-  },
-  {
-    "field": "UP_CELLS",
-    "type": "number",
-    "description": "HydroSHEDS upstream contributing raster-cell count at this reach.",
-    "nullable": true,
-    "units": "raster cells"
   },
   {
     "field": "UPLAND_SKM",
@@ -76,19 +57,6 @@
     "type": "boolean",
     "description": "True when the project added a coastal extension to the original source centerline.",
     "nullable": true
-  },
-  {
-    "field": "extension_evidence",
-    "type": "string",
-    "description": "Recorded evidence used to support a coastal extension; empty string when no extension evidence is recorded.",
-    "nullable": true
-  },
-  {
-    "field": "extension_gap_m",
-    "type": "number",
-    "description": "Recorded length of the coastal gap assessed by the extension workflow; zero when no gap is recorded.",
-    "nullable": true,
-    "units": "m"
   },
   {
     "field": "geometry",
@@ -122,33 +90,9 @@
     "nullable": true
   },
   {
-    "field": "name_assignment_status",
-    "type": "string",
-    "description": "Workflow classification of the reach name assignment, including direct, propagated, alternative, unnamed or withheld outcomes.",
-    "nullable": true
-  },
-  {
-    "field": "propagation_basis",
-    "type": "string",
-    "description": "Evidence or propagation method used to determine naming applicability on this reach.",
-    "nullable": true
-  },
-  {
     "field": "assignment_reason",
     "type": "string",
-    "description": "Recorded workflow decision rule explaining the selected, unnamed or withheld assignment; see readable_status for its applicability class.",
-    "nullable": true
-  },
-  {
-    "field": "contender_gazetteer_ids",
-    "type": "string",
-    "description": "JSON array of competing name UUIDs; not assignments.",
-    "nullable": true
-  },
-  {
-    "field": "pending_type_review_gazetteer_ids",
-    "type": "string",
-    "description": "JSON array of unselected type-pending name UUIDs.",
+    "description": "Recorded reason explaining the name assignment or withholding; naming_status identifies its applicability class.",
     "nullable": true
   }
 ]

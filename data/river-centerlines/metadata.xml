@@ -285,7 +285,7 @@
   <mdb:resourceLineage>
     <mrl:LI_Lineage>
       <mrl:statement>
-        <gco:CharacterString>Copied from water_reference_reaches; existing geometry UUIDs and source STRM_ID preserved. Coastal-extension flags retain project derivation evidence. Publication schema adds direct geometry/name references and scoped references between distinct accepted names; no identities or geographic assignments changed. Naming status joined one-to-one by existing reach UUID; no geometry, identity, name reference or assignment was recalculated.</gco:CharacterString>
+        <gco:CharacterString>Copied from water_reference_reaches; existing geometry UUIDs and source STRM_ID preserved. Coastal-extension flags retain project derivation evidence. Publication schema adds direct geometry/name references and scoped references between distinct accepted names; no identities or geographic assignments changed. Naming status joined one-to-one by existing reach UUID; no geometry, identity, name reference or assignment was recalculated. Public schema omits repeated validity diagnostics and internal processing fields. Original evidence remains in the workflow audit; public IDs, geometry and retained attributes are unchanged. Public schema omits repeated validity diagnostics and internal processing fields. Original evidence remains in the workflow audit; public IDs, geometry and retained attributes are unchanged.</gco:CharacterString>
       </mrl:statement>
       <mrl:source>
         <mrl:LI_Source>

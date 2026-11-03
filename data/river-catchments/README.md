@@ -22,8 +22,10 @@ This product is now present in the repository but is not part of the existing re
 
 GeoPackage is also losslessly gzip-compressed; decompress it before opening in GIS software. GeoParquet is also gzip-compressed; decompress it before use.
 
-All distributed geometries pass validity checks. Duplicate source identifiers and constant per-feature validity fields are omitted; original source validity and repair provenance, where applicable, remain recorded.
+All distributed geometries pass validity checks. Duplicate source identifiers and constant per-feature validity fields are omitted; the repair method, where applicable, remains recorded; original validity diagnostics stay in the internal audit.
 
 Source `Shape_Length` and `Shape_Area` measurements are omitted; they remain available from the original HydroSHEDS dataset.
 
 Files ending in `.gz` use lossless gzip compression. Decompress them before use in software that does not support the compressed distribution directly.
+
+Repeated validity diagnostics and internal processing fields are omitted from the public table. Relevant derivation details are documented in metadata; retained repair methods and naming status remain explicit.

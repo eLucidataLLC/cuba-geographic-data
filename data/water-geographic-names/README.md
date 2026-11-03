@@ -21,3 +21,9 @@ Cross-product references identify related records; they do not require copying a
 See [water names](../../reference/cuba_water_names_reference.csv) and [ONEI river correspondence](../../reference/cuba_onei_river_correspondence.csv), with [reading guidance](../../reference/README.md).
 
 This repository addition is not part of the existing release. Detailed feature types are retained in the name registry. Water-body geometry and the referenced geometry IDs are available in `../water-body-geometry/`. Metadata passes ISO 19115-3 XML Schema validation.
+
+The public table contains names, detailed types, naming scopes, status, source attribution and alternative-object references. Internal candidate IDs, reconstruction paths and intermediate validation fields remain in the workflow audit store. Source observations contain only source and source_id references supporting the preferred name, at the highest available source tier. Full source evidence stays in the internal audit.
+
+## Public columns
+
+`id`, `preferred_name`, `alternative_names`, `object_type`, `system_ids`, `source_observations`, `alternative_name_object_references`. Source observations contain only preferred-name source references. Validation and processing details remain internal.

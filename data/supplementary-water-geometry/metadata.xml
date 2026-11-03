@@ -285,7 +285,7 @@
   <mdb:resourceLineage>
     <mrl:LI_Lineage>
       <mrl:statement>
-        <gco:CharacterString>Source WKB decoded as EPSG:4326 without reshaping. UUIDv7 allocated for each newly created observation geometry; source IDs and input-record lineage retained.</gco:CharacterString>
+        <gco:CharacterString>Source WKB decoded as EPSG:4326 without reshaping. UUIDv7 allocated for each newly created observation geometry; source IDs and input-record lineage retained. Public schema omits repeated validity diagnostics and internal processing fields. Original evidence remains in the workflow audit; public IDs, geometry and retained attributes are unchanged. Public schema omits repeated validity diagnostics and internal processing fields. Original evidence remains in the workflow audit; public IDs, geometry and retained attributes are unchanged.</gco:CharacterString>
       </mrl:statement>
       <mrl:source>
         <mrl:LI_Source>
