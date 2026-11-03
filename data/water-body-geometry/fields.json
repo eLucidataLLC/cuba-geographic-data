@@ -17,134 +17,181 @@
   {
     "field": "Lake_name",
     "type": "string",
-    "description": "Retained source/workflow field Lake_name; values are exported without reinterpretation.",
-    "nullable": true
+    "description": "HydroLAKES source label; independent of the project preferred name.",
+    "nullable": true,
+    "definition_source": "https://data.hydrosheds.org/file/technical-documentation/HydroLAKES_TechDoc_v10.pdf"
   },
   {
     "field": "Country",
     "type": "string",
-    "description": "Retained source/workflow field Country; values are exported without reinterpretation.",
-    "nullable": true
+    "description": "Source country designation, based on the outlet for transboundary waters.",
+    "nullable": true,
+    "definition_source": "https://data.hydrosheds.org/file/technical-documentation/HydroLAKES_TechDoc_v10.pdf"
   },
   {
     "field": "Continent",
     "type": "string",
-    "description": "Retained source/workflow field Continent; values are exported without reinterpretation.",
-    "nullable": true
+    "description": "Source continental designation.",
+    "nullable": true,
+    "definition_source": "https://data.hydrosheds.org/file/technical-documentation/HydroLAKES_TechDoc_v10.pdf"
   },
   {
     "field": "Poly_src",
     "type": "string",
-    "description": "Retained source/workflow field Poly_src; values are exported without reinterpretation.",
-    "nullable": true
+    "description": "Dataset supplying the source outline.",
+    "nullable": true,
+    "definition_source": "https://data.hydrosheds.org/file/technical-documentation/HydroLAKES_TechDoc_v10.pdf"
   },
   {
     "field": "Lake_type",
     "type": "integer",
-    "description": "Retained source/workflow field Lake_type; values are exported without reinterpretation.",
-    "nullable": true
+    "description": "Source category: 1 lake, 2 reservoir, 3 regulated lake. Default 1 does not establish natural origin.",
+    "nullable": true,
+    "allowed_values": {
+      "1": "lake (source default)",
+      "2": "reservoir",
+      "3": "regulated lake"
+    },
+    "definition_source": "https://data.hydrosheds.org/file/technical-documentation/HydroLAKES_TechDoc_v10.pdf"
   },
   {
     "field": "Grand_id",
     "type": "integer",
-    "description": "Retained source/workflow field Grand_id; values are exported without reinterpretation.",
-    "nullable": true
+    "description": "GRanD reservoir identifier; 0 means no linked record.",
+    "nullable": true,
+    "definition_source": "https://data.hydrosheds.org/file/technical-documentation/HydroLAKES_TechDoc_v10.pdf"
   },
   {
     "field": "Lake_area",
     "type": "number",
-    "description": "Retained source/workflow field Lake_area; values are exported without reinterpretation.",
-    "nullable": true
+    "description": "Source water-surface area.",
+    "nullable": true,
+    "units": "km2",
+    "definition_source": "https://data.hydrosheds.org/file/technical-documentation/HydroLAKES_TechDoc_v10.pdf"
   },
   {
     "field": "Shore_len",
     "type": "number",
-    "description": "Retained source/workflow field Shore_len; values are exported without reinterpretation.",
-    "nullable": true
+    "description": "Source shoreline length.",
+    "nullable": true,
+    "units": "km",
+    "definition_source": "https://data.hydrosheds.org/file/technical-documentation/HydroLAKES_TechDoc_v10.pdf"
   },
   {
     "field": "Shore_dev",
     "type": "number",
-    "description": "Retained source/workflow field Shore_dev; values are exported without reinterpretation.",
-    "nullable": true
+    "description": "Shoreline-to-equal-area-circle circumference ratio.",
+    "nullable": true,
+    "units": "dimensionless",
+    "definition_source": "https://data.hydrosheds.org/file/technical-documentation/HydroLAKES_TechDoc_v10.pdf"
   },
   {
     "field": "Vol_total",
     "type": "number",
-    "description": "Retained source/workflow field Vol_total; values are exported without reinterpretation.",
-    "nullable": true
+    "description": "Total volume, reported or modeled according to Vol_src.",
+    "nullable": true,
+    "units": "million m3",
+    "definition_source": "https://data.hydrosheds.org/file/technical-documentation/HydroLAKES_TechDoc_v10.pdf"
   },
   {
     "field": "Vol_res",
     "type": "number",
-    "description": "Retained source/workflow field Vol_res; values are exported without reinterpretation.",
-    "nullable": true
+    "description": "Reported reservoir storage; 0 indicates none.",
+    "nullable": true,
+    "units": "million m3",
+    "definition_source": "https://data.hydrosheds.org/file/technical-documentation/HydroLAKES_TechDoc_v10.pdf"
   },
   {
     "field": "Vol_src",
     "type": "integer",
-    "description": "Retained source/workflow field Vol_src; values are exported without reinterpretation.",
-    "nullable": true
+    "description": "Volume provenance: 1 reported lake, 2 reported reservoir, 3 modeled lake.",
+    "nullable": true,
+    "allowed_values": {
+      "1": "reported lake volume",
+      "2": "reported reservoir volume",
+      "3": "modeled lake volume"
+    },
+    "definition_source": "https://data.hydrosheds.org/file/technical-documentation/HydroLAKES_TechDoc_v10.pdf"
   },
   {
     "field": "Depth_avg",
     "type": "number",
-    "description": "Retained source/workflow field Depth_avg; values are exported without reinterpretation.",
-    "nullable": true
+    "description": "Mean depth derived from volume and surface area.",
+    "nullable": true,
+    "units": "m",
+    "definition_source": "https://data.hydrosheds.org/file/technical-documentation/HydroLAKES_TechDoc_v10.pdf"
   },
   {
     "field": "Dis_avg",
     "type": "number",
-    "description": "Retained source/workflow field Dis_avg; values are exported without reinterpretation.",
-    "nullable": true
+    "description": "Modeled long-term outlet flow; -9999 means unavailable.",
+    "nullable": true,
+    "units": "m3/s",
+    "definition_source": "https://data.hydrosheds.org/file/technical-documentation/HydroLAKES_TechDoc_v10.pdf"
   },
   {
     "field": "Res_time",
     "type": "number",
-    "description": "Retained source/workflow field Res_time; values are exported without reinterpretation.",
-    "nullable": true
+    "description": "Volume-to-flow residence estimate; -1 means zero flow, -9999 unavailable.",
+    "nullable": true,
+    "units": "days",
+    "definition_source": "https://data.hydrosheds.org/file/technical-documentation/HydroLAKES_TechDoc_v10.pdf"
   },
   {
     "field": "Elevation",
     "type": "integer",
-    "description": "Retained source/workflow field Elevation; values are exported without reinterpretation.",
-    "nullable": true
+    "description": "Source lake-surface elevation.",
+    "nullable": true,
+    "units": "m above sea level",
+    "definition_source": "https://data.hydrosheds.org/file/technical-documentation/HydroLAKES_TechDoc_v10.pdf"
   },
   {
     "field": "Slope_100",
     "type": "number",
-    "description": "Retained source/workflow field Slope_100; values are exported without reinterpretation.",
-    "nullable": true
+    "description": "Mean surrounding slope within 100 m; -1 means uncalculated.",
+    "nullable": true,
+    "units": "degrees",
+    "definition_source": "https://data.hydrosheds.org/file/technical-documentation/HydroLAKES_TechDoc_v10.pdf"
   },
   {
     "field": "Wshd_area",
     "type": "number",
-    "description": "Retained source/workflow field Wshd_area; values are exported without reinterpretation.",
-    "nullable": true
+    "description": "Contributing area at outlet; -9999 means unavailable.",
+    "nullable": true,
+    "units": "km2",
+    "definition_source": "https://data.hydrosheds.org/file/technical-documentation/HydroLAKES_TechDoc_v10.pdf"
   },
   {
     "field": "Pour_long",
     "type": "number",
-    "description": "Retained source/workflow field Pour_long; values are exported without reinterpretation.",
-    "nullable": true
+    "description": "Source outlet longitude.",
+    "nullable": true,
+    "units": "degrees east",
+    "definition_source": "https://data.hydrosheds.org/file/technical-documentation/HydroLAKES_TechDoc_v10.pdf"
   },
   {
     "field": "Pour_lat",
     "type": "number",
-    "description": "Retained source/workflow field Pour_lat; values are exported without reinterpretation.",
-    "nullable": true
+    "description": "Source outlet latitude.",
+    "nullable": true,
+    "units": "degrees north",
+    "definition_source": "https://data.hydrosheds.org/file/technical-documentation/HydroLAKES_TechDoc_v10.pdf"
   },
   {
     "field": "Shape_Length",
     "type": "number",
-    "description": "Retained source/workflow field Shape_Length; values are exported without reinterpretation.",
-    "nullable": true
+    "description": "Source GIS perimeter in geographic coordinate units; not the metric Shore_len attribute. Not recomputed after ring repair.",
+    "nullable": true,
+    "units": "degrees",
+    "definition_source": "https://data.hydrosheds.org/file/technical-documentation/HydroLAKES_TechDoc_v10.pdf"
   },
   {
     "field": "Shape_Area",
     "type": "number",
-    "description": "Retained source/workflow field Shape_Area; values are exported without reinterpretation.",
-    "nullable": true
+    "description": "Source GIS area in geographic coordinate units; not the metric Lake_area attribute. Not recomputed after ring repair.",
+    "nullable": true,
+    "units": "square degrees",
+    "definition_source": "https://data.hydrosheds.org/file/technical-documentation/HydroLAKES_TechDoc_v10.pdf"
   },
   {
     "field": "geometry",

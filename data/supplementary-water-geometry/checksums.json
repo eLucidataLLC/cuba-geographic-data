@@ -2,8 +2,8 @@
   "files": [
     {
       "filename": "README.md",
-      "bytes": 1068,
-      "sha256": "5115152614d081d4332e7da9ef63a19ad2fe6d75cefa8e4f8e86f91c3e6abf77"
+      "bytes": 1069,
+      "sha256": "2b1aef77bc7451149b2d19d34333bf85090aeb62a98d43b7e014a8a3dd0933fe"
     },
     {
       "filename": "cuba_supplementary_water_geometry.geojson",
@@ -22,13 +22,13 @@
     },
     {
       "filename": "fields.json",
-      "bytes": 2984,
-      "sha256": "b592337f37dd0d8083510ef0389d692a3689945ca8de7a404c3d11f093bbdbd7"
+      "bytes": 3111,
+      "sha256": "8508f3d93706c671ad69f7863a913a61690a7d4d17595ad28c663a4ed9b20fc6"
     },
     {
       "filename": "metadata.xml",
       "bytes": 13880,
-      "sha256": "5f7f8448fc9630a5d995c8dd881b422118b6e03ac6d2115ce61f908ac1ca7d50"
+      "sha256": "1b278e203df1659e0b09085ce3ed0e112fbabf3bcd43654839f05d8b1588eb4f"
     }
   ]
 }

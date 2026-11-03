@@ -11,13 +11,13 @@
   {
     "field": "input_record_index",
     "type": "integer",
-    "description": "Retained source/workflow field input_record_index; values are exported without reinterpretation.",
+    "description": "Internal evidence-row index in the source workflow; not a stable public feature identifier.",
     "nullable": true
   },
   {
     "field": "source",
     "type": "string",
-    "description": "Retained source/workflow field source; values are exported without reinterpretation.",
+    "description": "Source family or consolidated identity origin used to construct the record; detailed contributing sources are retained separately.",
     "nullable": true
   },
   {
@@ -29,25 +29,29 @@
   {
     "field": "reference_dataset",
     "type": "string",
-    "description": "Retained source/workflow field reference_dataset; values are exported without reinterpretation.",
-    "nullable": true
+    "description": "Reference coverage used to classify this observation: HydroSHEDS or HydroLAKES.",
+    "nullable": true,
+    "allowed_values": [
+      "HydroSHEDS",
+      "HydroLAKES"
+    ]
   },
   {
     "field": "inclusion_reason",
     "type": "string",
-    "description": "Retained source/workflow field inclusion_reason; values are exported without reinterpretation.",
+    "description": "Why the source observation was retained outside reference coverage: not_represented_in_hydrosheds or not_represented_in_hydrolakes.",
     "nullable": true
   },
   {
     "field": "validation_status",
     "type": "string",
-    "description": "Retained source/workflow field validation_status; values are exported without reinterpretation.",
+    "description": "supplementary_geometry identifies a retained source observation, not a validated reference-network identity.",
     "nullable": true
   },
   {
     "field": "name",
     "type": "string",
-    "description": "Retained source/workflow field name; values are exported without reinterpretation.",
+    "description": "Verbatim name of the source observation; not a selected consolidated name label.",
     "nullable": true
   },
   {
@@ -59,19 +63,19 @@
   {
     "field": "source_feature_type",
     "type": "string",
-    "description": "Retained source/workflow field source_feature_type; values are exported without reinterpretation.",
+    "description": "Original source feature-type code or label; interpreted in its source vocabulary.",
     "nullable": true
   },
   {
     "field": "source_feature_class",
     "type": "string",
-    "description": "Retained source/workflow field source_feature_class; values are exported without reinterpretation.",
+    "description": "Original source broad feature class; distinct from the detailed feature type.",
     "nullable": true
   },
   {
     "field": "source_provenance",
     "type": "string",
-    "description": "Retained source/workflow field source_provenance; values are exported without reinterpretation.",
+    "description": "Recorded source provenance as supplied by the workflow; null means not recorded, not that the feature has no source.",
     "nullable": true
   },
   {

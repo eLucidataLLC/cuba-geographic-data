@@ -76,6 +76,13 @@
               </cit:dateType>
             </cit:CI_Date>
           </cit:date>
+          <cit:identifier>
+            <mcc:MD_Identifier>
+              <mcc:code>
+                <gco:CharacterString>cuba_water_geographic_names</gco:CharacterString>
+              </mcc:code>
+            </mcc:MD_Identifier>
+          </cit:identifier>
           <cit:citedResponsibleParty>
             <cit:CI_Responsibility>
               <cit:role>
@@ -111,13 +118,6 @@
               </cit:party>
             </cit:CI_Responsibility>
           </cit:citedResponsibleParty>
-          <cit:identifier>
-            <mcc:MD_Identifier>
-              <mcc:code>
-                <gco:CharacterString>cuba_water_geographic_names</gco:CharacterString>
-              </mcc:code>
-            </mcc:MD_Identifier>
-          </cit:identifier>
         </cit:CI_Citation>
       </mri:citation>
       <mri:abstract>
@@ -177,17 +177,6 @@
           </mrd:formatSpecificationCitation>
         </mrd:MD_Format>
       </mrd:distributionFormat>
-      <mrd:transferOptions>
-        <mrd:MD_DigitalTransferOptions>
-          <mrd:onLine>
-            <cit:CI_OnlineResource>
-              <cit:linkage>
-                <gco:CharacterString>cuba_water_geographic_names.parquet</gco:CharacterString>
-              </cit:linkage>
-            </cit:CI_OnlineResource>
-          </mrd:onLine>
-        </mrd:MD_DigitalTransferOptions>
-      </mrd:transferOptions>
       <mrd:distributionFormat>
         <mrd:MD_Format>
           <mrd:formatSpecificationCitation>
@@ -199,17 +188,6 @@
           </mrd:formatSpecificationCitation>
         </mrd:MD_Format>
       </mrd:distributionFormat>
-      <mrd:transferOptions>
-        <mrd:MD_DigitalTransferOptions>
-          <mrd:onLine>
-            <cit:CI_OnlineResource>
-              <cit:linkage>
-                <gco:CharacterString>cuba_water_geographic_names.csv</gco:CharacterString>
-              </cit:linkage>
-            </cit:CI_OnlineResource>
-          </mrd:onLine>
-        </mrd:MD_DigitalTransferOptions>
-      </mrd:transferOptions>
       <mrd:distributionFormat>
         <mrd:MD_Format>
           <mrd:formatSpecificationCitation>
@@ -221,6 +199,28 @@
           </mrd:formatSpecificationCitation>
         </mrd:MD_Format>
       </mrd:distributionFormat>
+      <mrd:transferOptions>
+        <mrd:MD_DigitalTransferOptions>
+          <mrd:onLine>
+            <cit:CI_OnlineResource>
+              <cit:linkage>
+                <gco:CharacterString>cuba_water_geographic_names.parquet</gco:CharacterString>
+              </cit:linkage>
+            </cit:CI_OnlineResource>
+          </mrd:onLine>
+        </mrd:MD_DigitalTransferOptions>
+      </mrd:transferOptions>
+      <mrd:transferOptions>
+        <mrd:MD_DigitalTransferOptions>
+          <mrd:onLine>
+            <cit:CI_OnlineResource>
+              <cit:linkage>
+                <gco:CharacterString>cuba_water_geographic_names.csv</gco:CharacterString>
+              </cit:linkage>
+            </cit:CI_OnlineResource>
+          </mrd:onLine>
+        </mrd:MD_DigitalTransferOptions>
+      </mrd:transferOptions>
       <mrd:transferOptions>
         <mrd:MD_DigitalTransferOptions>
           <mrd:onLine>

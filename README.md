@@ -72,7 +72,7 @@ These additions are not part of v1.0.0; no new release or DOI has been assigned.
 - [River catchments](data/river-catchments/): 56,594 reach-linked catchment polygons. The 979 source ring defects have been repaired without boundary displacement; beta-source limitations remain documented.
 - [Supplementary water geometry](data/supplementary-water-geometry/): 372 valid source observations representing 370 source features outside reference coverage. Multiple observations of a source feature are retained; these are not consolidated reference-network objects.
 
-These additions are not part of v1.0.0. No new release or DOI has been assigned. Metadata schema validation and remaining field-documentation improvements are still pending.
+These additions are not part of v1.0.0. No new release or DOI has been assigned. Field definitions are documented and all product metadata passes ISO 19115-3 XML Schema validation.
 
 ## Examples
 
@@ -93,7 +93,7 @@ The [`examples/`](examples/) directory contains Jupyter notebooks demonstrating 
 
 Unless otherwise indicated, data in this repository are available under **CC BY 4.0**.
 
-`cuba_administrative_geometry.*`, `cuba_coastline.*`, and `cuba_land_polygons.*`, `cuba_water_geographic_names.*`, `cuba_river_centerlines.*`, and the hydrography reference CSVs are available under the **Open Database License (ODbL) 1.0**.
+`cuba_administrative_geometry.*`, `cuba_coastline.*`, and `cuba_land_polygons.*`, `cuba_water_geographic_names.*`, `cuba_river_centerlines.*`, `cuba_supplementary_water_geometry.*`, and the hydrography reference CSVs are available under the **Open Database License (ODbL) 1.0**.
 
 See [LICENSE.md](LICENSE.md) for details.
 

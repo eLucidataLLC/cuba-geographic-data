@@ -24,7 +24,7 @@ The GeoJSON distribution uses lossless gzip compression; decompress it before op
 
 See [water names](../../reference/cuba_water_names_reference.csv) and [ONEI river correspondence](../../reference/cuba_onei_river_correspondence.csv), with [reading guidance](../../reference/README.md).
 
-This repository addition is not part of the existing release. Detailed feature types are retained in the name registry. Water-body geometry and the referenced geometry IDs are available in `../water-body-geometry/`. Formal ISO XML schema validation remains pending.
+This repository addition is not part of the existing release. Detailed feature types are retained in the name registry. Water-body geometry and the referenced geometry IDs are available in `../water-body-geometry/`. Metadata passes ISO 19115-3 XML Schema validation.
 
 All distributed geometries pass validity checks. Duplicate source identifiers and constant per-feature validity fields are omitted; original source validity and repair provenance, where applicable, remain recorded.
 Preferred labels are obtained through `gazetteer_id` in the names dataset. `naming_status` retains applicability and uncertainty; alternative and contender references retain their distinct roles.

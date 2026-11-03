@@ -2,8 +2,8 @@
   "files": [
     {
       "filename": "README.md",
-      "bytes": 2395,
-      "sha256": "c17344a3fe458f408722eed22a120e1b995965119773151c1b83a45c44754978"
+      "bytes": 2396,
+      "sha256": "07aed1a962710676b200fc661ea65c2ecb5d001bca2af592b02e9bcd7a92bd8a"
     },
     {
       "filename": "cuba_river_centerlines.geojson.gz",
@@ -22,13 +22,13 @@
     },
     {
       "filename": "fields.json",
-      "bytes": 4577,
-      "sha256": "9c361a4f1976cb7f78394dc25ce8f25c844585545989feb487f5e7bf01210b58"
+      "bytes": 4669,
+      "sha256": "d393138547d21ea1688b8a11dbc6805bdb3c1aef873420c4d242b8c8d0ac3914"
     },
     {
       "filename": "metadata.xml",
       "bytes": 15211,
-      "sha256": "51da4596f722b61e8d25183c3adfbd1cc6c0eb7ef30f178cf74e314ce34a6fa2"
+      "sha256": "2c3371769ac4db96ac747f520937650dde0a8b0bd5f27443d7d83d43d73c12f9"
     }
   ]
 }

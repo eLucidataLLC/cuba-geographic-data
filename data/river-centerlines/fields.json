@@ -23,7 +23,7 @@
   {
     "field": "STRM_UP",
     "type": "string",
-    "description": "Retained source/workflow field STRM_UP; values are exported without reinterpretation.",
+    "description": "Underscore-separated original STRM_ID values of immediately upstream reaches; empty string means none recorded.",
     "nullable": true
   },
   {
@@ -35,32 +35,35 @@
   {
     "field": "NODE_ID_UP",
     "type": "integer",
-    "description": "Retained source/workflow field NODE_ID_UP; values are exported without reinterpretation.",
+    "description": "Original HydroSHEDS upstream network-node identifier, not a reach or project UUID.",
     "nullable": true
   },
   {
     "field": "NODE_ID_DOWN",
     "type": "integer",
-    "description": "Retained source/workflow field NODE_ID_DOWN; values are exported without reinterpretation.",
+    "description": "Original HydroSHEDS downstream network-node identifier, not a reach or project UUID.",
     "nullable": true
   },
   {
     "field": "LENGTH_KM",
     "type": "number",
-    "description": "Retained source/workflow field LENGTH_KM; values are exported without reinterpretation.",
-    "nullable": true
+    "description": "Source HydroSHEDS reach length; not recalculated to include project coastal extensions.",
+    "nullable": true,
+    "units": "km"
   },
   {
     "field": "UP_CELLS",
     "type": "number",
-    "description": "Retained source/workflow field UP_CELLS; values are exported without reinterpretation.",
-    "nullable": true
+    "description": "HydroSHEDS upstream contributing raster-cell count at this reach.",
+    "nullable": true,
+    "units": "raster cells"
   },
   {
     "field": "UPLAND_SKM",
     "type": "number",
-    "description": "Retained source/workflow field UPLAND_SKM; values are exported without reinterpretation.",
-    "nullable": true
+    "description": "HydroSHEDS upstream contributing drainage area; not the area of this individual reach catchment.",
+    "nullable": true,
+    "units": "km2"
   },
   {
     "field": "ORD_STRAH",
@@ -71,20 +74,21 @@
   {
     "field": "extended_to_coast",
     "type": "boolean",
-    "description": "Retained source/workflow field extended_to_coast; values are exported without reinterpretation.",
+    "description": "True when the project added a coastal extension to the original source centerline.",
     "nullable": true
   },
   {
     "field": "extension_evidence",
     "type": "string",
-    "description": "Retained source/workflow field extension_evidence; values are exported without reinterpretation.",
+    "description": "Recorded evidence used to support a coastal extension; empty string when no extension evidence is recorded.",
     "nullable": true
   },
   {
     "field": "extension_gap_m",
     "type": "number",
-    "description": "Retained source/workflow field extension_gap_m; values are exported without reinterpretation.",
-    "nullable": true
+    "description": "Recorded length of the coastal gap assessed by the extension workflow; zero when no gap is recorded.",
+    "nullable": true,
+    "units": "m"
   },
   {
     "field": "geometry",

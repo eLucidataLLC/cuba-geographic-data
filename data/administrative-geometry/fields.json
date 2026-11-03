@@ -17,7 +17,7 @@
   {
     "field": "name",
     "type": "string",
-    "description": "Official administrative name from CoDPA.",
+    "description": "Verbatim name of the source observation; not a selected consolidated name label.",
     "nullable": false
   },
   {

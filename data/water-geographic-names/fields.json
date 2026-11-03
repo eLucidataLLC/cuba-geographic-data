@@ -17,19 +17,19 @@
   {
     "field": "source",
     "type": "string",
-    "description": "Retained source/workflow field source; values are exported without reinterpretation.",
+    "description": "Source family or consolidated identity origin used to construct the record; detailed contributing sources are retained separately.",
     "nullable": true
   },
   {
     "field": "source_identity",
     "type": "string",
-    "description": "Retained source/workflow field source_identity; values are exported without reinterpretation.",
+    "description": "Source feature identifier or consolidated river identity key; not the public object UUID.",
     "nullable": true
   },
   {
     "field": "system_id",
     "type": "string",
-    "description": "Retained source/workflow field system_id; values are exported without reinterpretation.",
+    "description": "Single naming scope containing this object; null when multiple scopes apply. Use system_ids for the complete list. River scope uses MAIN_BAS.",
     "nullable": true
   },
   {
@@ -53,31 +53,36 @@
   {
     "field": "object_type_status",
     "type": "string",
-    "description": "Retained source/workflow field object_type_status; values are exported without reinterpretation.",
-    "nullable": true
+    "description": "Resolution of feature classification: resolved, conflicting or unknown. Independent of geographic assignment confidence.",
+    "nullable": true,
+    "allowed_values": [
+      "resolved",
+      "conflicting",
+      "unknown"
+    ]
   },
   {
     "field": "channel_type_variation",
     "type": "integer",
-    "description": "Retained source/workflow field channel_type_variation; values are exported without reinterpretation.",
+    "description": "Boolean flag encoded as 0/1: reviewed stream/canal variation within one identity was retained rather than treated as separate incompatible types.",
     "nullable": true
   },
   {
     "field": "object_type_options",
     "type": "string",
-    "description": "Retained source/workflow field object_type_options; values are exported without reinterpretation.",
+    "description": "JSON array of normalized feature types at the preferred source tier.",
     "nullable": true
   },
   {
     "field": "source_type_codes",
     "type": "string",
-    "description": "Retained source/workflow field source_type_codes; values are exported without reinterpretation.",
+    "description": "JSON array of original feature codes at the selected classification tier; source codes are preserved.",
     "nullable": true
   },
   {
     "field": "object_type_sources",
     "type": "string",
-    "description": "Retained source/workflow field object_type_sources; values are exported without reinterpretation.",
+    "description": "JSON array of source families supplying the selected feature classification.",
     "nullable": true
   },
   {
@@ -89,7 +94,7 @@
   {
     "field": "recorded_primary_names",
     "type": "string",
-    "description": "Retained source/workflow field recorded_primary_names; values are exported without reinterpretation.",
+    "description": "JSON array of source-supported primary candidate labels within the object, before final display preference.",
     "nullable": true
   },
   {
@@ -101,79 +106,90 @@
   {
     "field": "source_recorded_names",
     "type": "string",
-    "description": "Retained source/workflow field source_recorded_names; values are exported without reinterpretation.",
+    "description": "JSON array of recorded source spellings retained for this object.",
     "nullable": true
   },
   {
     "field": "applicability_alternative_names",
     "type": "string",
-    "description": "Retained source/workflow field applicability_alternative_names; values are exported without reinterpretation.",
+    "description": "JSON array reserved for labels alternative in geographic applicability; not proof that they are aliases of this identity.",
     "nullable": true
   },
   {
     "field": "naming_flags",
     "type": "string",
-    "description": "Retained source/workflow field naming_flags; values are exported without reinterpretation.",
+    "description": "JSON array of workflow annotations on naming relationships; flags do not by themselves revoke an accepted identity.",
     "nullable": true
   },
   {
     "field": "decision",
     "type": "string",
-    "description": "Retained source/workflow field decision; values are exported without reinterpretation.",
-    "nullable": true
+    "description": "Object acceptance: accepted when it has a validated association; unresolved otherwise. Does not imply every geographic association is validated.",
+    "nullable": true,
+    "allowed_values": [
+      "accepted",
+      "unresolved"
+    ]
   },
   {
     "field": "decision_scope",
     "type": "string",
-    "description": "Retained source/workflow field decision_scope; values are exported without reinterpretation.",
+    "description": "Interpretation of the object decision; name_object_has_validated_association means at least one associated candidate was accepted.",
     "nullable": true
   },
   {
     "field": "association_validation_status",
     "type": "string",
-    "description": "Retained source/workflow field association_validation_status; values are exported without reinterpretation.",
-    "nullable": true
+    "description": "fully_validated: all associated candidates accepted; partially_validated: accepted and unresolved candidates coexist; unresolved: no accepted candidate.",
+    "nullable": true,
+    "allowed_values": [
+      "fully_validated",
+      "partially_validated",
+      "unresolved"
+    ]
   },
   {
     "field": "review_required",
     "type": "integer",
-    "description": "Retained source/workflow field review_required; values are exported without reinterpretation.",
+    "description": "Boolean encoded as 0/1 indicating unresolved associated candidates in the source validation snapshot; retained evidence, not an instruction to reopen a closed disposition.",
     "nullable": true
   },
   {
     "field": "accepted_candidate_ids",
     "type": "string",
-    "description": "Retained source/workflow field accepted_candidate_ids; values are exported without reinterpretation.",
+    "description": "JSON array of internal candidate keys whose association decision was accepted.",
     "nullable": true
   },
   {
     "field": "unresolved_candidate_ids",
     "type": "string",
-    "description": "Retained source/workflow field unresolved_candidate_ids; values are exported without reinterpretation.",
+    "description": "JSON array of internal candidate keys whose association decision was not accepted; not assigned geometry UUIDs.",
     "nullable": true
   },
   {
     "field": "accepted_associations",
     "type": "integer",
-    "description": "Retained source/workflow field accepted_associations; values are exported without reinterpretation.",
-    "nullable": true
+    "description": "Count of accepted candidate associations for this name object.",
+    "nullable": true,
+    "units": "count"
   },
   {
     "field": "unresolved_associations",
     "type": "integer",
-    "description": "Retained source/workflow field unresolved_associations; values are exported without reinterpretation.",
-    "nullable": true
+    "description": "Count of nonaccepted candidate associations retained as evidence for this name object.",
+    "nullable": true,
+    "units": "count"
   },
   {
     "field": "candidate_ids",
     "type": "string",
-    "description": "Retained source/workflow field candidate_ids; values are exported without reinterpretation.",
+    "description": "JSON array of internal validation candidate keys contributing to this object.",
     "nullable": true
   },
   {
     "field": "water_ids",
     "type": "string",
-    "description": "Retained source/workflow field water_ids; values are exported without reinterpretation.",
+    "description": "JSON array of internal branch or water-body target keys; these are not public geometry UUIDs.",
     "nullable": true
   },
   {
@@ -185,32 +201,37 @@
   {
     "field": "supported_reach_ids",
     "type": "string",
-    "description": "Retained source/workflow field supported_reach_ids; values are exported without reinterpretation.",
+    "description": "JSON array of original HydroSHEDS STRM_ID values supporting river identity; does not include every propagated assignment.",
     "nullable": true
   },
   {
     "field": "observed_reach_components",
     "type": "string",
-    "description": "Retained source/workflow field observed_reach_components; values are exported without reinterpretation.",
+    "description": "JSON array of connected groups of directly supported STRM_ID values; observation gaps do not create separate name identities.",
     "nullable": true
   },
   {
     "field": "legacy_component_object_ids",
     "type": "string",
-    "description": "Retained source/workflow field legacy_component_object_ids; values are exported without reinterpretation.",
+    "description": "JSON array of earlier internal component-based identity keys retained for traceability; not current public object IDs.",
     "nullable": true
   },
   {
     "field": "connecting_paths",
     "type": "string",
-    "description": "Retained source/workflow field connecting_paths; values are exported without reinterpretation.",
+    "description": "JSON array of recorded STRM_ID paths and identity-connection evidence; paths do not turn inferred reaches into direct observations.",
     "nullable": true
   },
   {
     "field": "naming_role",
     "type": "string",
-    "description": "Retained source/workflow field naming_role; values are exported without reinterpretation.",
-    "nullable": true
+    "description": "watercourse: eligible watercourse name; feature_only: localized feature rather than a watercourse name; pending_type_review: type not established for propagation.",
+    "nullable": true,
+    "allowed_values": [
+      "watercourse",
+      "feature_only",
+      "pending_type_review"
+    ]
   },
   {
     "field": "alternative_name_object_ids",

@@ -2,8 +2,8 @@
   "files": [
     {
       "filename": "README.md",
-      "bytes": 1754,
-      "sha256": "3f3511327caa659f3fcb8e9d4e455976840de8383e71b6dba059749a1e31209b"
+      "bytes": 1755,
+      "sha256": "f65e513bcdb813e9eed66814aa33e94a2102102a9733d39e9526712e705d3939"
     },
     {
       "filename": "cuba_river_catchments.geojson.gz",
@@ -22,13 +22,13 @@
     },
     {
       "filename": "fields.json",
-      "bytes": 2024,
-      "sha256": "cda4e9b1051cf2eab3635339fc2470cfde8af6da1ea48604e93b22456361b301"
+      "bytes": 2079,
+      "sha256": "1dda1725ab912fe8fb4eca120040dc6b77513fdcb0344e2311d99d465def9d94"
     },
     {
       "filename": "metadata.xml",
       "bytes": 14260,
-      "sha256": "f4d1796b74f07ec0642d5fa2d35c0c70e96ce1c049133cb5fbf6e27611b75c37"
+      "sha256": "b177fba0229158df60975263ab1942235a64a1fd2be02ab05db1f38bc0e02aec"
     }
   ]
 }

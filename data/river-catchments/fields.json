@@ -11,14 +11,16 @@
   {
     "field": "UPSTREAM_ACC",
     "type": "number",
-    "description": "Retained source/workflow field UPSTREAM_ACC; values are exported without reinterpretation.",
-    "nullable": true
+    "description": "HydroSHEDS upstream contributing raster-cell count associated with this catchment reach.",
+    "nullable": true,
+    "units": "raster cells"
   },
   {
     "field": "UPLAND_SKM",
     "type": "number",
-    "description": "Retained source/workflow field UPLAND_SKM; values are exported without reinterpretation.",
-    "nullable": true
+    "description": "HydroSHEDS upstream contributing drainage area; not the area of this individual reach catchment.",
+    "nullable": true,
+    "units": "km2"
   },
   {
     "field": "STRM_ID",
