@@ -237,7 +237,7 @@
   <mdb:resourceLineage>
     <mrl:LI_Lineage>
       <mrl:statement>
-        <gco:CharacterString>Copied from water_name_objects with all generated UUIDv7 IDs unchanged. No consolidation or name selection is rerun. Publication schema adds direct geometry/name references and scoped references between distinct accepted names; no identities or geographic assignments changed.</gco:CharacterString>
+        <gco:CharacterString>Copied from water_name_objects with all generated UUIDv7 IDs unchanged. No consolidation or name selection is rerun. Publication schema adds direct geometry/name references and scoped references between distinct accepted names; no identities or geographic assignments changed. Preferred labels use recorded complete forms when available; otherwise a Spanish generic derived from the resolved feature type is added to the unchanged source name. Original source spellings, object IDs, associations and geometry are preserved.</gco:CharacterString>
       </mrl:statement>
       <mrl:source>
         <mrl:LI_Source>

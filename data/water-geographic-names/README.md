@@ -27,3 +27,5 @@ The public table contains names, detailed types, naming scopes, status, source a
 ## Public columns
 
 `id`, `preferred_name`, `alternative_names`, `object_type`, `system_ids`, `source_observations`, `alternative_name_object_references`. Source observations contain only preferred-name source references. Validation and processing details remain internal.
+
+Preferred labels retain recorded complete forms when available. Otherwise a Spanish generic from the resolved feature type is added to the unchanged source name. Source references identify the underlying recorded name; they do not imply that a derived full label was recorded verbatim. Original spellings remain alternatives.

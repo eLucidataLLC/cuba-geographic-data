@@ -11,7 +11,7 @@
   {
     "field": "source_outline_id",
     "type": "string",
-    "description": "UUID foreign key to the land-polygon record whose exterior rings form this coastline.",
+    "description": "UUID foreign key to the land-polygon record whose exterior and interior rings form this coastline.",
     "nullable": false,
     "references": {
       "product": "land-polygons",

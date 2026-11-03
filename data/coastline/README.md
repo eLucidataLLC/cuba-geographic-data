@@ -17,3 +17,5 @@ The GeoPackage table/layer is `cuba_coastline`. Alternative formats represent th
 Cross-product references identify related records; they do not require copying another product into this folder.
 
 Repeated validity diagnostics and internal processing fields are omitted from the public table. Relevant derivation details are documented in metadata; retained repair methods and naming status remain explicit.
+
+The line geometry includes every exterior and interior ring of the land polygons, including the boundaries around holes. Coordinates are copied without smoothing.

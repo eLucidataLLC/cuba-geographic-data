@@ -146,7 +146,7 @@
         </cit:CI_Citation>
       </mri:citation>
       <mri:abstract>
-        <gco:CharacterString>Exterior boundary lines of the R11 nonmarine outline; interior rings excluded. Repository dataset: 1 records.</gco:CharacterString>
+        <gco:CharacterString>Boundary lines of the R11 nonmarine outline, including exterior and interior rings. Repository dataset: 1 records.</gco:CharacterString>
       </mri:abstract>
       <mri:spatialRepresentationType>
         <mcc:MD_SpatialRepresentationTypeCode codeList="https://schemas.isotc211.org/resources/codelists/codelists.xml#ISO19115-1.1.mcc.MD_SpatialRepresentationTypeCode" codeListValue="vector">vector</mcc:MD_SpatialRepresentationTypeCode>
@@ -285,7 +285,7 @@
   <mdb:resourceLineage>
     <mrl:LI_Lineage>
       <mrl:statement>
-        <gco:CharacterString>New derived geometry objects created from polygon exterior rings, with source_outline_id referencing the generated outline objects. No smoothing. Public schema omits repeated validity diagnostics and internal processing fields. Original evidence remains in the workflow audit; public IDs, geometry and retained attributes are unchanged.</gco:CharacterString>
+        <gco:CharacterString>New derived geometry objects created from polygon exterior and interior rings, with source_outline_id referencing the generated outline objects. No smoothing. Public schema omits repeated validity diagnostics and internal processing fields. Original evidence remains in the workflow audit; public IDs, geometry and retained attributes are unchanged.</gco:CharacterString>
       </mrl:statement>
       <mrl:source>
         <mrl:LI_Source>

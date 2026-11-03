@@ -4,7 +4,7 @@
 
 ## Use
 
-Use the polygon geometry for area coverage or masking. The footprint includes inland water; do not interpret every included area as dry land. Its exterior rings are also available in the coastline product.
+Use the polygon geometry for area coverage or masking. The footprint includes inland water; do not interpret every included area as dry land. Its exterior and interior rings are also available in the coastline product.
 
 The GeoPackage table/layer is `cuba_land_polygons`. Alternative formats represent the same product.
 

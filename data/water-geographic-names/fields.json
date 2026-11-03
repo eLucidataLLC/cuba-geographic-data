@@ -11,7 +11,7 @@
   {
     "field": "preferred_name",
     "type": "string",
-    "description": "Preferred recorded label; never a reconstructed spelling.",
+    "description": "Preferred display label: a recorded complete form when available; otherwise the resolved Spanish feature-type generic followed by the unchanged recorded name.",
     "nullable": true
   },
   {
@@ -35,7 +35,7 @@
   {
     "field": "source_observations",
     "type": "string",
-    "description": "JSON array containing only source and source_id for the preferred recorded spelling, using GNS then GeoNames then Overture/OSM precedence. Repeated references are deduplicated; distinct supporting features at the selected tier are retained.",
+    "description": "JSON array of source and source_id references supporting the underlying recorded name, selected by GNS then GeoNames then Overture/OSM precedence. An added type generic is derived, not attributed verbatim to the source.",
     "nullable": true
   },
   {

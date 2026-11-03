@@ -6,10 +6,14 @@
 type, alternatives, sources, readable associations, geography and project UUID.
 Associated names are distinguished from aliases of the object itself.
 
-`cuba_onei_river_correspondence.csv`: ONEI river records alongside candidate project
-river objects. A ONEI record repeats when several candidate objects exist;
-unmatched records remain visible. These are existing spelling-supported links,
-not verified geographic identities. No new fuzzy matching was introduced.
+`cuba_onei_river_correspondence.csv`: one row per ONEI river, linked to a current
+consolidated object. Matching uses recorded names and assigned-geometry province
+intersections, then preferred-name agreement, highest assigned Strahler order
+and upstream drainage area. These are inferred correspondences, not independently
+verified drainage-coast identities. Equal-ranking matches stay blank. Mani-Mani
+has no matching consolidated name. Internal matching diagnostics are not included.
+`Watershed MAIN_BAS` references the matched object's drainage system; several
+ONEI rivers can share a watershed without becoming the same river object.
 
 Province intersections and representative coordinates describe geometry under
 the explicit Location basis in the names table; the ONEI table describes assigned river geometry. Representative points are display aids, not naming seeds. Length is
@@ -20,6 +24,6 @@ Alternative name object IDs and labels refer to distinct objects sharing assigne
 
 ## Dataset lookup
 
-Use the Object ID to locate a record in [Water Geographic Names](../data/water-geographic-names/). Reach geometry is in [River and Channel Centerlines](../data/river-centerlines/). [Water-body geometry](../data/water-body-geometry/) is available in the repository. These tables cover the complete name registry; ONEI links are candidate correspondences, not confirmed identities.
+Use the Object ID to locate a record in [Water Geographic Names](../data/water-geographic-names/). Reach geometry is in [River and Channel Centerlines](../data/river-centerlines/). [Water-body geometry](../data/water-body-geometry/) is available in the repository. These tables cover the complete name registry; ONEI matching status is explicit; unresolved rows carry no selected object ID.
 
 License and attribution: [per-table terms](LICENSE.md).

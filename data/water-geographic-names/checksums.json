@@ -2,33 +2,33 @@
   "files": [
     {
       "filename": "README.md",
-      "bytes": 2108,
-      "sha256": "f78de8a9333c6ba8a6857cb3a4dbbbfbcb37cb8542369199df324cee0ffee45d"
+      "bytes": 2435,
+      "sha256": "d06c0ca860db27975490037a0219b0ed2f0e3ebe564b36dd357b1afd2984c3d1"
     },
     {
       "filename": "cuba_water_geographic_names.csv",
-      "bytes": 2872664,
-      "sha256": "463c7a3e90ed73ad7a6c1c996164aa9bdb4adbc65e748e59023d4d310a1696ea"
+      "bytes": 2894518,
+      "sha256": "b1545a7da51c0f6c2ce088e95cc971457de83a7a3f1ffd054cd9fd9682065f0b"
     },
     {
       "filename": "cuba_water_geographic_names.gpkg",
-      "bytes": 3080192,
-      "sha256": "a07a2116819c65554fac7b32d41378c019b44179d5bed6c9310c51f28f00ae58"
+      "bytes": 3145728,
+      "sha256": "cf89081c67f9b2fccc7f1ee673ae077ef39c2f39852d73339f933d0608a3ae9d"
     },
     {
       "filename": "cuba_water_geographic_names.parquet",
-      "bytes": 580033,
-      "sha256": "5cfdf874aa3e872792d7cf454fd013973f78091c6e75ff4376172f092b3b9cb3"
+      "bytes": 585237,
+      "sha256": "8ddda704d628a00e517988f3e1e81b777d1fe8a967749efec1746ec09d516063"
     },
     {
       "filename": "fields.json",
-      "bytes": 1590,
-      "sha256": "9d931d37641db9517b3295ca51f8568f607bb3661d41455c287f109bd00d5461"
+      "bytes": 1670,
+      "sha256": "d2f3118a4199d1e71c63bb4ad4306da898e369748f7e92c00f4d2e1194bb910b"
     },
     {
       "filename": "metadata.xml",
-      "bytes": 12438,
-      "sha256": "107a9fb75e6ba42bde9ea3c0c3360e703076743c4a868a3123694a9aa4c4a403"
+      "bytes": 12686,
+      "sha256": "3e0a6fe9b85e189e8a297aa5cd695e76ada2fe1bfb0e300d6777f727a816d2b6"
     }
   ]
 }
