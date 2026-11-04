@@ -52,7 +52,7 @@
   <mdb:dateInfo>
     <cit:CI_Date>
       <cit:date>
-        <gco:DateTime>2026-11-03T19:04:05.101007-08:00</gco:DateTime>
+        <gco:DateTime>2026-11-04T12:16:13.126458-08:00</gco:DateTime>
       </cit:date>
       <cit:dateType>
         <cit:CI_DateTypeCode codeList="https://schemas.isotc211.org/resources/codelists/codelists.xml#ISO19115-1.1.cit.CI_DateTypeCode" codeListValue="creation">creation</cit:CI_DateTypeCode>
@@ -67,7 +67,7 @@
             <msr:MD_GeometricObjectTypeCode codeList="https://schemas.isotc211.org/resources/codelists/codelists.xml#ISO19115-1.1.msr.MD_GeometricObjectTypeCode" codeListValue="point">point</msr:MD_GeometricObjectTypeCode>
           </msr:geometricObjectType>
           <msr:geometricObjectCount>
-            <gco:Integer>9343</gco:Integer>
+            <gco:Integer>8984</gco:Integer>
           </msr:geometricObjectCount>
         </msr:MD_GeometricObjects>
       </msr:geometricObjects>
@@ -94,7 +94,7 @@
           <cit:date>
             <cit:CI_Date>
               <cit:date>
-                <gco:Date>2026-11-03</gco:Date>
+                <gco:Date>2026-11-04</gco:Date>
               </cit:date>
               <cit:dateType>
                 <cit:CI_DateTypeCode codeList="https://schemas.isotc211.org/resources/codelists/codelists.xml#ISO19115-1.1.cit.CI_DateTypeCode" codeListValue="creation">creation</cit:CI_DateTypeCode>
@@ -108,7 +108,7 @@
               </mcc:code>
             </mcc:MD_Identifier>
           </cit:identifier>
-        <cit:citedResponsibleParty>
+          <cit:citedResponsibleParty>
             <cit:CI_Responsibility>
               <cit:role>
                 <cit:CI_RoleCode codeList="https://schemas.isotc211.org/resources/codelists/codelists.xml#ISO19115-1.1.cit.CI_RoleCode" codeListValue="author">author</cit:CI_RoleCode>
@@ -143,10 +143,10 @@
               </cit:party>
             </cit:CI_Responsibility>
           </cit:citedResponsibleParty>
-          </cit:CI_Citation>
+        </cit:CI_Citation>
       </mri:citation>
       <mri:abstract>
-        <gco:CharacterString>Water name objects with an ID, preferred name, string-array alternatives, feature type, preferred-name source reference and one Point location in EPSG:4326. Unreleased candidate: 9,343 records.</gco:CharacterString>
+        <gco:CharacterString>Water name objects with an ID, preferred name, string-array alternatives, feature type, preferred-name source reference and one Point location in EPSG:4326. Unreleased candidate: 8,984 records.</gco:CharacterString>
       </mri:abstract>
       <mri:spatialRepresentationType>
         <mcc:MD_SpatialRepresentationTypeCode codeList="https://schemas.isotc211.org/resources/codelists/codelists.xml#ISO19115-1.1.mcc.MD_SpatialRepresentationTypeCode" codeListValue="vector">vector</mcc:MD_SpatialRepresentationTypeCode>

@@ -2,7 +2,7 @@
 
 Water name objects with an ID, preferred name, string-array alternatives, feature type, preferred-name source reference and one Point location in EPSG:4326.
 
-**9,343 name objects.** Available as GeoParquet, GeoJSON and GeoPackage.
+**8,984 name objects.** Available as GeoParquet, GeoJSON and GeoPackage.
 
 ## Fields
 
