@@ -1,31 +1,24 @@
 # Cuba Water Geographic Names
 
-[Parquet](cuba_water_geographic_names.parquet) · [CSV](cuba_water_geographic_names.csv) · [GeoPackage attributes](cuba_water_geographic_names.gpkg)
+Water name objects with an ID, preferred name, string-array alternatives, feature type, preferred-name source reference and one Point location in EPSG:4326.
 
-## Use
+**9,343 name objects.** Available as GeoParquet, GeoJSON and GeoPackage.
 
-Use the field definitions to interpret identifiers, relationships and status values before analysis.
+## Fields
 
-The GeoPackage table/layer is `cuba_water_geographic_names`. Alternative formats represent the same product.
+- `id`: consolidated name object identifier.
+- `preferred_name`: selected, type-complete label.
+- `alternative_names`: an array of strings, such as `["name 1", "name 2"]`.
+- `object_type`: detailed feature type.
+- `source_observations`: source references supporting only the preferred name; `other` if none is documented.
+- `geometry`: one Point in EPSG:4326.
 
-## Documentation
+Name identities, preferred labels, alternative strings and detailed types are preserved. Each object has one Point selected from observations supporting its preferred-name source. A recorded point takes precedence over a representative point derived from the original source line or polygon. Equivalent observations are selected deterministically by source feature/name identifiers and coordinates; points are never averaged. If the preferred name has no documented source, its source is other, with no invented source identifier, and an existing object location is selected. System scopes, alternative-object cross-references and source-location collections are not part of the public name schema. Detailed evidence and the recorded/derived point-selection method remain in the workflow audit. Physical water bodies and river reaches link directly through gazetteer_id; no reverse geometry references are stored on names.
 
-- [Metadata](metadata.xml): description, coverage, lineage, limitations, license and source attribution. This is the authoritative product metadata.
-- [Field definitions](fields.json): logical types, null semantics, units, controlled values and relationship targets.
-- [Checksums](checksums.json): filenames, byte sizes and SHA-256 hashes for download verification.
+A name Point is a location, not the geometry or extent of the river, lake or other named feature. Water-body polygons and river centerlines retain their own geometry and link to this list by `gazetteer_id` → `id`.
 
-Cross-product references identify related records; they do not require copying another product into this folder.
+## License and metadata
 
-## Human-readable reference tables
+**ODbL 1.0**, across all formats. Attribution, source lineage and limitations are in [metadata.xml](metadata.xml); definitions are in [fields.json](fields.json).
 
-See [water names](../../reference/cuba_water_names_reference.csv) and [ONEI river correspondence](../../reference/cuba_onei_river_correspondence.csv), with [reading guidance](../../reference/README.md).
-
-This repository addition is not part of the existing release. Detailed feature types are retained in the name registry. Water-body geometry and the referenced geometry IDs are available in `../water-body-geometry/`. Metadata passes ISO 19115-3 XML Schema validation.
-
-The public table contains names, detailed types, naming scopes, status, source attribution and alternative-object references. Internal candidate IDs, reconstruction paths and intermediate validation fields remain in the workflow audit store. Source observations contain only source and source_id references supporting the preferred name, at the highest available source tier. Full source evidence stays in the internal audit.
-
-## Public columns
-
-`id`, `preferred_name`, `alternative_names`, `object_type`, `system_ids`, `source_observations`, `alternative_name_object_references`. Source observations contain only preferred-name source references. Validation and processing details remain internal.
-
-Preferred labels retain recorded complete forms when available. Otherwise a Spanish generic from the resolved feature type is added to the unchanged source name. Source references identify the underlying recorded name; they do not imply that a derived full label was recorded verbatim. Original spellings remain alternatives.
+Readable reference: [water names](../../reference/cuba_water_names_reference.csv). [Example notebook](../../examples/water_geographic_names.ipynb).

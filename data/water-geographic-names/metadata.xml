@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<mdb:MD_Metadata xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0" xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0" xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0" xmlns:mcc="http://standards.iso.org/iso/19115/-3/mcc/1.0" xmlns:mco="http://standards.iso.org/iso/19115/-3/mco/1.0" xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0" xmlns:mrd="http://standards.iso.org/iso/19115/-3/mrd/1.0" xmlns:mri="http://standards.iso.org/iso/19115/-3/mri/1.0" xmlns:mrl="http://standards.iso.org/iso/19115/-3/mrl/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://standards.iso.org/iso/19115/-3/mdb/2.0 https://schemas.isotc211.org/19115/-3/mdb/2.0/mdb.xsd">
+<mdb:MD_Metadata xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0" xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0" xmlns:gex="http://standards.iso.org/iso/19115/-3/gex/1.0" xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0" xmlns:mcc="http://standards.iso.org/iso/19115/-3/mcc/1.0" xmlns:mco="http://standards.iso.org/iso/19115/-3/mco/1.0" xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0" xmlns:mrd="http://standards.iso.org/iso/19115/-3/mrd/1.0" xmlns:mri="http://standards.iso.org/iso/19115/-3/mri/1.0" xmlns:mrl="http://standards.iso.org/iso/19115/-3/mrl/2.0" xmlns:mrs="http://standards.iso.org/iso/19115/-3/mrs/1.0" xmlns:msr="http://standards.iso.org/iso/19115/-3/msr/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://standards.iso.org/iso/19115/-3/mdb/2.0 https://schemas.isotc211.org/19115/-3/mdb/2.0/mdb.xsd">
   <mdb:defaultLocale>
     <lan:PT_Locale>
       <lan:language>
@@ -52,13 +52,38 @@
   <mdb:dateInfo>
     <cit:CI_Date>
       <cit:date>
-        <gco:DateTime>2026-11-02T16:15:35.082735-08:00</gco:DateTime>
+        <gco:DateTime>2026-11-03T19:04:05.101007-08:00</gco:DateTime>
       </cit:date>
       <cit:dateType>
         <cit:CI_DateTypeCode codeList="https://schemas.isotc211.org/resources/codelists/codelists.xml#ISO19115-1.1.cit.CI_DateTypeCode" codeListValue="creation">creation</cit:CI_DateTypeCode>
       </cit:dateType>
     </cit:CI_Date>
   </mdb:dateInfo>
+  <mdb:spatialRepresentationInfo>
+    <msr:MD_VectorSpatialRepresentation>
+      <msr:geometricObjects>
+        <msr:MD_GeometricObjects>
+          <msr:geometricObjectType>
+            <msr:MD_GeometricObjectTypeCode codeList="https://schemas.isotc211.org/resources/codelists/codelists.xml#ISO19115-1.1.msr.MD_GeometricObjectTypeCode" codeListValue="point">point</msr:MD_GeometricObjectTypeCode>
+          </msr:geometricObjectType>
+          <msr:geometricObjectCount>
+            <gco:Integer>9343</gco:Integer>
+          </msr:geometricObjectCount>
+        </msr:MD_GeometricObjects>
+      </msr:geometricObjects>
+    </msr:MD_VectorSpatialRepresentation>
+  </mdb:spatialRepresentationInfo>
+  <mdb:referenceSystemInfo>
+    <mrs:MD_ReferenceSystem>
+      <mrs:referenceSystemIdentifier>
+        <mcc:MD_Identifier>
+          <mcc:code>
+            <gco:CharacterString>EPSG:4326</gco:CharacterString>
+          </mcc:code>
+        </mcc:MD_Identifier>
+      </mrs:referenceSystemIdentifier>
+    </mrs:MD_ReferenceSystem>
+  </mdb:referenceSystemInfo>
   <mdb:identificationInfo>
     <mri:MD_DataIdentification>
       <mri:citation>
@@ -69,7 +94,7 @@
           <cit:date>
             <cit:CI_Date>
               <cit:date>
-                <gco:Date>2026-11-02</gco:Date>
+                <gco:Date>2026-11-03</gco:Date>
               </cit:date>
               <cit:dateType>
                 <cit:CI_DateTypeCode codeList="https://schemas.isotc211.org/resources/codelists/codelists.xml#ISO19115-1.1.cit.CI_DateTypeCode" codeListValue="creation">creation</cit:CI_DateTypeCode>
@@ -83,7 +108,7 @@
               </mcc:code>
             </mcc:MD_Identifier>
           </cit:identifier>
-          <cit:citedResponsibleParty>
+        <cit:citedResponsibleParty>
             <cit:CI_Responsibility>
               <cit:role>
                 <cit:CI_RoleCode codeList="https://schemas.isotc211.org/resources/codelists/codelists.xml#ISO19115-1.1.cit.CI_RoleCode" codeListValue="author">author</cit:CI_RoleCode>
@@ -118,14 +143,37 @@
               </cit:party>
             </cit:CI_Responsibility>
           </cit:citedResponsibleParty>
-        </cit:CI_Citation>
+          </cit:CI_Citation>
       </mri:citation>
       <mri:abstract>
-        <gco:CharacterString>Consolidated name identities, detailed feature types, preferred labels, alternatives and source observations. Unreleased candidate: 3,687 records.</gco:CharacterString>
+        <gco:CharacterString>Water name objects with an ID, preferred name, string-array alternatives, feature type, preferred-name source reference and one Point location in EPSG:4326. Unreleased candidate: 9,343 records.</gco:CharacterString>
       </mri:abstract>
+      <mri:spatialRepresentationType>
+        <mcc:MD_SpatialRepresentationTypeCode codeList="https://schemas.isotc211.org/resources/codelists/codelists.xml#ISO19115-1.1.mcc.MD_SpatialRepresentationTypeCode" codeListValue="vector">vector</mcc:MD_SpatialRepresentationTypeCode>
+      </mri:spatialRepresentationType>
       <mri:topicCategory>
         <mri:MD_TopicCategoryCode>inlandWaters</mri:MD_TopicCategoryCode>
       </mri:topicCategory>
+      <mri:extent>
+        <gex:EX_Extent>
+          <gex:geographicElement>
+            <gex:EX_GeographicBoundingBox>
+              <gex:westBoundLongitude>
+                <gco:Decimal>-85.812</gco:Decimal>
+              </gex:westBoundLongitude>
+              <gex:eastBoundLongitude>
+                <gco:Decimal>-25.7</gco:Decimal>
+              </gex:eastBoundLongitude>
+              <gex:southBoundLatitude>
+                <gco:Decimal>19.2619353</gco:Decimal>
+              </gex:southBoundLatitude>
+              <gex:northBoundLatitude>
+                <gco:Decimal>25.0</gco:Decimal>
+              </gex:northBoundLatitude>
+            </gex:EX_GeographicBoundingBox>
+          </gex:geographicElement>
+        </gex:EX_Extent>
+      </mri:extent>
       <mri:descriptiveKeywords>
         <mri:MD_Keywords>
           <mri:keyword>
@@ -171,7 +219,7 @@
           <mrd:formatSpecificationCitation>
             <cit:CI_Citation>
               <cit:title>
-                <gco:CharacterString>Parquet</gco:CharacterString>
+                <gco:CharacterString>GeoParquet</gco:CharacterString>
               </cit:title>
             </cit:CI_Citation>
           </mrd:formatSpecificationCitation>
@@ -182,7 +230,7 @@
           <mrd:formatSpecificationCitation>
             <cit:CI_Citation>
               <cit:title>
-                <gco:CharacterString>CSV</gco:CharacterString>
+                <gco:CharacterString>GeoJSON</gco:CharacterString>
               </cit:title>
             </cit:CI_Citation>
           </mrd:formatSpecificationCitation>
@@ -193,7 +241,7 @@
           <mrd:formatSpecificationCitation>
             <cit:CI_Citation>
               <cit:title>
-                <gco:CharacterString>GeoPackage attributes</gco:CharacterString>
+                <gco:CharacterString>GeoPackage</gco:CharacterString>
               </cit:title>
             </cit:CI_Citation>
           </mrd:formatSpecificationCitation>
@@ -215,7 +263,7 @@
           <mrd:onLine>
             <cit:CI_OnlineResource>
               <cit:linkage>
-                <gco:CharacterString>cuba_water_geographic_names.csv</gco:CharacterString>
+                <gco:CharacterString>cuba_water_geographic_names.geojson</gco:CharacterString>
               </cit:linkage>
             </cit:CI_OnlineResource>
           </mrd:onLine>
@@ -237,12 +285,12 @@
   <mdb:resourceLineage>
     <mrl:LI_Lineage>
       <mrl:statement>
-        <gco:CharacterString>Copied from water_name_objects with all generated UUIDv7 IDs unchanged. No consolidation or name selection is rerun. Publication schema adds direct geometry/name references and scoped references between distinct accepted names; no identities or geographic assignments changed. Preferred labels use recorded complete forms when available; otherwise a Spanish generic derived from the resolved feature type is added to the unchanged source name. Original source spellings, object IDs, associations and geometry are preserved.</gco:CharacterString>
+        <gco:CharacterString>Name identities, preferred labels, alternative strings and detailed types are preserved. Each object has one Point selected from observations supporting its preferred-name source. A recorded point takes precedence over a representative point derived from the original source line or polygon. Equivalent observations are selected deterministically by source feature/name identifiers and coordinates; points are never averaged. If the preferred name has no documented source, its source is other, with no invented source identifier, and an existing object location is selected. System scopes, alternative-object cross-references and source-location collections are not part of the public name schema. Detailed evidence and the recorded/derived point-selection method remain in the workflow audit. Physical water bodies and river reaches link directly through gazetteer_id; no reverse geometry references are stored on names.</gco:CharacterString>
       </mrl:statement>
       <mrl:source>
         <mrl:LI_Source>
           <mrl:description>
-            <gco:CharacterString>NGA GNS</gco:CharacterString>
+            <gco:CharacterString>NGA Geographic Names Server</gco:CharacterString>
           </mrl:description>
         </mrl:LI_Source>
       </mrl:source>
@@ -263,7 +311,7 @@
       <mrl:source>
         <mrl:LI_Source>
           <mrl:description>
-            <gco:CharacterString>Project consolidated registry</gco:CharacterString>
+            <gco:CharacterString>Project consolidated name registry</gco:CharacterString>
           </mrl:description>
         </mrl:LI_Source>
       </mrl:source>

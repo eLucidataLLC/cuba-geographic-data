@@ -88,11 +88,5 @@
     "type": "string",
     "description": "Recorded reach applicability status or accepted/not_applicable water-body association status.",
     "nullable": true
-  },
-  {
-    "field": "assignment_reason",
-    "type": "string",
-    "description": "Recorded reason explaining the name assignment or withholding; naming_status identifies its applicability class.",
-    "nullable": true
   }
 ]

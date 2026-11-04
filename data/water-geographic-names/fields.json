@@ -2,7 +2,7 @@
   {
     "field": "id",
     "type": "string",
-    "description": "UUIDv7 identifier of this object; existing generated IDs are preserved.",
+    "description": "UUIDv7 identifier of the consolidated name object.",
     "nullable": false,
     "format": "uuid",
     "uuid_version": 7,
@@ -11,37 +11,35 @@
   {
     "field": "preferred_name",
     "type": "string",
-    "description": "Preferred display label: a recorded complete form when available; otherwise the resolved Spanish feature-type generic followed by the unchanged recorded name.",
-    "nullable": true
+    "description": "Selected, type-complete preferred name.",
+    "nullable": false
   },
   {
     "field": "alternative_names",
     "type": "string",
-    "description": "JSON array of other recorded names belonging to this name object.",
-    "nullable": true
+    "description": "JSON array of alternative name strings belonging to this object.",
+    "nullable": false
   },
   {
     "field": "object_type",
     "type": "string",
-    "description": "Detailed resolved feature type; river/lake processing routes do not replace this classification.",
-    "nullable": true
-  },
-  {
-    "field": "system_ids",
-    "type": "string",
-    "description": "JSON naming scopes; a river scope is its MAIN_BAS watershed, not a claim that all tributaries share an identity.",
-    "nullable": true
+    "description": "Detailed feature type, such as stream, canal, lagoon or reservoir.",
+    "nullable": false
   },
   {
     "field": "source_observations",
     "type": "string",
-    "description": "JSON array of source and source_id references supporting the underlying recorded name, selected by GNS then GeoNames then Overture/OSM precedence. An added type generic is derived, not attributed verbatim to the source.",
-    "nullable": true
+    "description": "Source and source_id references for the preferred name only. source=other and source_id=null mean no documented preferred-name source.",
+    "nullable": false
   },
   {
-    "field": "alternative_name_object_references",
-    "type": "string",
-    "description": "JSON references to distinct accepted name objects, scoped to explicit geometry UUIDs; shared applicability is not alias identity.",
-    "nullable": true
+    "field": "geometry",
+    "type": "geometry",
+    "description": "One Point location in EPSG:4326 from a source supporting the preferred name. Recorded coordinates take precedence; otherwise a representative point is derived from the original source line or polygon. Alternative-name observation locations and point-selection details remain in the workflow audit.",
+    "nullable": false,
+    "geometry_types": [
+      "Point"
+    ],
+    "crs": "EPSG:4326"
   }
 ]

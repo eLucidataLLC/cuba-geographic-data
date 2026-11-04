@@ -12,7 +12,7 @@ HydroSHEDS v2: Lehner, B., Roth, A., Huber, M., Anand, M., and Thieme, M. (2022)
 
 HydroLAKES v1: Messager, M.L., Lehner, B., Grill, G., Nedeva, I., and Schmitt, O. (2016), Estimating the volume and age of water stored in global lakes using a geo-statistical approach, Nature Communications, 7:13603. https://doi.org/10.1038/ncomms13603. Source: https://www.hydrosheds.org/products/hydrolakes (CC BY 4.0).
 
-Province context derives from the project administrative geometry product (ODbL 1.0), including Natural Earth public-domain data. ONEI relationships remain spelling-supported candidates, not confirmed river identity matches.
+Province context derives from the project administrative geometry product (ODbL 1.0), including Natural Earth public-domain data. ONEI relationships are inferred from final consolidated names and complete-system geography; they remain subject to geographic verification.
 
 ## Administrative geographic names
 

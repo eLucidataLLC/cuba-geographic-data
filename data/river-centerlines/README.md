@@ -34,3 +34,5 @@ Files ending in `.gz` use lossless gzip compression. Decompress them before use 
 Repeated validity diagnostics and internal processing fields are omitted from the public table. Relevant derivation details are documented in metadata; retained repair methods and naming status remain explicit.
 
 Repeated validity diagnostics and internal processing fields are omitted from the public table. Relevant derivation details are documented in metadata; retained repair methods and naming status remain explicit.
+
+The public centerline schema contains 13 fields. gazetteer_id, alternative_gazetteer_ids and naming_status are retained unchanged. Detailed assignment_reason values remain in the internal river_name_applicability audit table and are omitted from every public distribution.

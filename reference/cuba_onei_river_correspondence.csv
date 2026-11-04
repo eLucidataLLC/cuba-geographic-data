@@ -1,6 +1,6 @@
 ﻿ONEI river,ONEI province,ONEI drainage coast,ONEI length (km),Our river object ID,Our river accepted name,Our river type,Watershed MAIN_BAS,ONEI source record
 Mantua,Pinar del Río,Norte,69.0,01a19e12-4b62-75d0-801e-11f1fd8400e7,Río Mantua,stream,[98783],1
-Mani-Mani,Artemisa,Norte,43.3,,,,[],2
+Mani-Mani,Artemisa,Norte,43.3,01a19e12-4b42-7433-8260-092f18b5618c,Río Mani-Mani,stream,[98297],2
 Almendares,La Habana,Norte,49.8,01a19e12-4b31-76e5-83eb-62e6a24e786e,Río Almendares,stream,[98080],3
 Jaruco,Mayabeque,Norte,31.0,01a19e12-4b28-757f-ba43-522b35c8df0f,Río Jaruco,stream,[98025],4
 La Palma,Matanzas,Norte,71.0,01a19e12-4b80-71be-aece-d81e390c00fa,Río La Palma,stream,[98197],5
@@ -10,28 +10,28 @@ Jatibonico del Norte,Sancti Spíritus,Norte,66.6,01a19e12-4b3b-7657-a47d-7424cdb
 Chambas,Ciego de Ávila,Norte,68.3,01a19e12-4b36-7142-bf82-3b4dbe24e638,Río Chambas,stream,[98856],9
 Caonao,Camagüey,Norte,154.9,01a19e12-4b4b-7019-89b3-9aebe70e3d93,Río Caonao,stream,[99244],10
 Chaparra,Las Tunas,Norte,22.6,01a19e12-4bfa-741b-a337-86c00b6fe72e,Río Chaparra,stream,[100197],11
-Mayarí,Holguín,Norte,107.0,01a19e12-4b51-74d5-9b2a-11da2c1a50c1,Río Mayarí,stream,[100487],12
-Sagua de Tánamo,Holguín,Norte,89.2,01a19e12-4b75-72b5-92f2-8f1fe5b2a897,Río Romero,stream,[100524],13
+Mayarí,Holguín,Norte,107.0,01a19e12-4b7f-76de-bf84-8c2a0a747040,Río Mayarí,stream,[100487],12
+Sagua de Tánamo,Holguín,Norte,89.2,01a19e12-4b61-7001-ad4b-754a5e9b147a,Río Sagua de Tánamo,stream,[100524],13
 Nipe,Holguín,Norte,55.5,01a19e12-4b72-720b-8e0f-19441507e0fa,Río Nipe,stream,[100532],14
 Contramaestre,Santiago de Cuba,Norte,81.0,01a19e12-4bc5-75e1-9d57-212eb0dea74e,Río Contramaestre,stream,[100236],15
 Toa,Guantánamo,Norte,116.2,01a19e12-4b71-70b8-a095-7adb7fd34938,Río Toa,stream,[100748],16
 Las Nuevas,Isla de la Juventud,Norte,28.0,01a19e12-4b77-73d5-906e-639474f274fe,Río Las Nuevas,stream,[99333],17
-Cuyaguateje,Pinar del Río,Sur,112.4,01a19e12-4b4b-7019-89b3-9ae187e3186a,Río Cuyaguateje,stream,[98531],18
-Hondo,Pinar del Río,Sur,98.4,01a19e12-4c03-7320-8a6a-b2e2c56e2c3f,Río Hondo,stream,[98927],19
+Cuyaguateje,Pinar del Río,Sur,112.4,01a19e12-4b3b-7657-a47d-7420ea20729f,Río Cuyaguateje,stream,[98715],18
+Hondo,Pinar del Río,Sur,98.4,01a19e12-4b65-717b-b0a5-978e1ef19675,Río Hondo,stream,[98588],19
 Ajiconal,Pinar del Río,Sur,83.0,01a19e12-4bb2-7143-a6b0-56dea8eb75a4,Río Ajiconal,stream,[98588],20
-San Cristóbal,Artemisa,Sur,61.9,01a19e12-4be4-71da-8a18-791083aff4f2,Río San Cristóbal,stream,[98615],21
+San Cristóbal,Artemisa,Sur,61.9,01a19e12-4c26-75ec-9fc2-79038508ee7c,Río San Cristóbal,stream,[98429],21
 Mayabeque,Mayabeque,Sur,52.9,01a19e12-4b39-771d-9de1-84e99ba92487,Río Mayabeque,stream,[98159],22
 Hanábana,Matanzas,Sur,111.0,01a19e12-4b31-76e5-83eb-62f5468e1280,Río Hanábana,stream,[98604],23
-Arimao,Cienfuegos,Sur,82.6,01a19e12-4b9f-74d7-8d5e-2b4e16a9f672,Río Arimao,stream,[99224],24
-Caunao,Cienfuegos,Sur,53.9,01a19e12-4b38-737f-a849-a0f02c5783a0,Río Caunao,stream,[98889],25
-Zaza,Sancti Spíritus,Sur,155.0,01a19e12-4bb3-70b8-b377-a6293d54900c,Río Zaza,stream,[98894],26
+Arimao,Cienfuegos,Sur,82.6,01a19e12-4b43-7279-8e54-3a2334b4479b,Río Arimao,stream,[98965],24
+Caunao,Cienfuegos,Sur,53.9,01a19e12-4b63-72e7-866d-6ab617a383d3,Río Caunao,stream,[98889],25
+Zaza,Sancti Spíritus,Sur,155.0,01a19e12-4b56-7548-9468-af071fec0b3e,Río Zaza,stream,[98894],26
 Agabama,Sancti Spíritus,Sur,122.0,01a19e12-4c21-766b-b87d-256f9fc22a8e,Río Agabama,stream,[98896],27
 Jatibonico del Sur,Sancti Spíritus,Sur,119.5,01a19e12-4b76-7622-8322-07f5b3cb1164,Río Jatibonico del Sur,stream,[98993],28
 Majagua,Ciego de Ávila,Sur,72.0,01a19e12-4b40-7089-9f4a-8ba16b8db8ee,Río Majagua,stream,[99222],29
-San Pedro,Camagüey,Sur,137.2,01a19e12-4b89-7594-b09f-a8a7f4008fd7,Río San Pedro,stream,[100172],30
-Las Yeguas,Camagüey,Sur,102.6,01a19e12-4b73-7405-87ec-03d7bd084b39,Río Las Yeguas,stream,[100081],31
+San Pedro,Camagüey,Sur,137.2,01a19e12-4b28-757f-ba43-522d0431a80a,Río San Pedro,stream,[99927],30
+Las Yeguas,Camagüey,Sur,102.6,01a19e12-4c05-73ae-b81a-a2b1ef8069f6,Río Las Yeguas,stream,[99909],31
 Tana,Las Tunas,Sur,68.9,01a19e12-4b31-76e5-83eb-62ec6ceb3954,Río Tana,stream,[100222],32
-Jobabo,Las Tunas,Sur,66.1,01a19e12-4b77-73d5-906e-63984c2003f8,Río Jobabo,stream,[100236],33
+Jobabo,Las Tunas,Sur,66.1,01a19e12-4c1d-7719-aa2b-8b3e9ee7b1eb,Río Jobabo,stream,[100355],33
 Salado,Holguín,Sur,121.0,01a19e12-4b29-70c6-b6fd-0a3c7f5c87ac,Río Salado,stream,[100236],34
 Cauto,Granma,Sur,343.0,01a19e12-4b2b-758b-a467-b61206ac7927,Río Cauto,stream,[100236],35
 Bayamo,Granma,Sur,115.0,01a19e12-4b79-76d5-992d-476d26fbb489,Río Bayamo,stream,[100236],36

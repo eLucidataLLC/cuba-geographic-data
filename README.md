@@ -25,9 +25,11 @@ and water-body polygons. Names and geometry are independent products connected
 through direct identifiers; detailed feature types distinguish streams, canals,
 channels, ditches, lakes, lagoons, reservoirs and other water features.
 
+Valid consolidated source names are retained even when no geometry assignment is available. Unassigned names do not extend the physical network.
+
 ![Hidrografía de Cuba](hydrography_map.png)
 
-[Water Geographic Names](data/water-geographic-names/) — 3,687 consolidated objects with preferred names, recorded alternatives, detailed types and source references. **ODbL 1.0.**
+[Water Geographic Names](data/water-geographic-names/) — 9,343 consolidated objects with preferred names, recorded alternatives, detailed types, a preferred-name source reference and one Point location. **ODbL 1.0.**
 
 [River and Channel Centerlines](data/river-centerlines/) — 56,594 reaches with drainage topology, stream order, direct name references and naming status, including explicit uncertain and withheld assignments. **ODbL 1.0.**
 
@@ -67,10 +69,7 @@ they are not independently verified river identities.
 
 ## Formats and documentation
 
-Spatial datasets are available as **GeoParquet, GeoJSON and GeoPackage**. The
-Water Geographic Names registry is distributed as **Parquet, CSV and GeoPackage
-attributes**. Its [dataset CSV](data/water-geographic-names/cuba_water_geographic_names.csv)
-is separate from the readable [water-name reference CSV](reference/cuba_water_names_reference.csv).
+Spatial datasets, including Water Geographic Names as Point features, are available as **GeoParquet, GeoJSON and GeoPackage**. Readable [water-name reference CSVs](reference/cuba_water_names_reference.csv) are separate from the spatial products.
 River-centerline GeoJSON and GeoPackage files, and all three river-catchment
 formats, use **gzip compression** (`.gz`). Product READMEs link to the files.
 
