@@ -52,7 +52,7 @@
   <mdb:dateInfo>
     <cit:CI_Date>
       <cit:date>
-        <gco:DateTime>2026-11-04T12:16:13.126458-08:00</gco:DateTime>
+        <gco:DateTime>2026-11-04T17:07:29.748923-08:00</gco:DateTime>
       </cit:date>
       <cit:dateType>
         <cit:CI_DateTypeCode codeList="https://schemas.isotc211.org/resources/codelists/codelists.xml#ISO19115-1.1.cit.CI_DateTypeCode" codeListValue="creation">creation</cit:CI_DateTypeCode>
@@ -285,7 +285,7 @@
   <mdb:resourceLineage>
     <mrl:LI_Lineage>
       <mrl:statement>
-        <gco:CharacterString>Name identities, preferred labels, alternative strings and detailed types are preserved. Each object has one Point selected from observations supporting its preferred-name source. A recorded point takes precedence over a representative point derived from the original source line or polygon. Equivalent observations are selected deterministically by source feature/name identifiers and coordinates; points are never averaged. If the preferred name has no documented source, its source is other, with no invented source identifier, and an existing object location is selected. System scopes, alternative-object cross-references and source-location collections are not part of the public name schema. Detailed evidence and the recorded/derived point-selection method remain in the workflow audit. Physical water bodies and river reaches link directly through gazetteer_id; no reverse geometry references are stored on names.</gco:CharacterString>
+        <gco:CharacterString>Name identities, preferred labels, alternative strings and detailed types are preserved. Display alternatives exclude confirmed spelling errors, incomplete forms, redundant generic forms, identified source-language translations and reviewed historical forms of uncertain validity; original source forms remain in the workflow audit. Each object has one Point selected from observations supporting its preferred-name source. A recorded point takes precedence over a representative point derived from the original source line or polygon. Equivalent observations are selected deterministically by source feature/name identifiers and coordinates; points are never averaged. If the preferred name has no documented source, its source is other, with no invented source identifier, and an existing object location is selected. System scopes, alternative-object cross-references and source-location collections are not part of the public name schema. Detailed evidence and the recorded/derived point-selection method remain in the workflow audit. Physical water bodies and river reaches link directly through gazetteer_id; no reverse geometry references are stored on names.</gco:CharacterString>
       </mrl:statement>
       <mrl:source>
         <mrl:LI_Source>

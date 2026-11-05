@@ -17,7 +17,7 @@
   {
     "field": "alternative_names",
     "type": "string",
-    "description": "JSON array of alternative name strings belonging to this object.",
+    "description": "JSON array of distinct alternative name strings; confirmed spelling errors, incomplete forms, redundant generic forms, identified translations and reviewed historical forms of uncertain validity are excluded.",
     "nullable": false
   },
   {
