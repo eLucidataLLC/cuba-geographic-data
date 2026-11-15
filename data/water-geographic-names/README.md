@@ -2,18 +2,20 @@
 
 Water name objects with an ID, preferred name, string-array alternatives, feature type, preferred-name source reference and one Point location in EPSG:4326.
 
-**8,984 name objects.** Available as GeoParquet, GeoJSON and GeoPackage.
+**8,935 name objects.** Available as GeoParquet, GeoJSON and GeoPackage.
 
 ## Fields
 
 - `id`: consolidated name object identifier.
 - `preferred_name`: selected, type-complete label.
-- `alternative_names`: distinct alternative strings, such as `["name 1", "name 2"]`. Confirmed spelling errors, incomplete forms, redundant generic forms, identified translations and reviewed historical forms of uncertain validity remain in source evidence rather than this list.
+- `alternative_names`: distinct alternative strings, such as `["name 1", "name 2"]`. Confirmed spelling errors, incomplete forms, redundant generic forms, identified translations and reviewed unconfirmed or historical forms of uncertain validity remain in source evidence rather than this list.
 - `object_type`: detailed feature type.
 - `source_observations`: source references supporting only the preferred name; `other` if none is documented.
 - `geometry`: one Point in EPSG:4326.
 
-Name identities, preferred labels, alternative strings and detailed types are preserved. Display alternatives exclude confirmed spelling errors, incomplete forms, redundant generic forms, identified source-language translations and reviewed historical forms of uncertain validity; original source forms remain in the workflow audit. Each object has one Point selected from observations supporting its preferred-name source. A recorded point takes precedence over a representative point derived from the original source line or polygon. Equivalent observations are selected deterministically by source feature/name identifiers and coordinates; points are never averaged. If the preferred name has no documented source, its source is other, with no invented source identifier, and an existing object location is selected. System scopes, alternative-object cross-references and source-location collections are not part of the public name schema. Detailed evidence and the recorded/derived point-selection method remain in the workflow audit. Physical water bodies and river reaches link directly through gazetteer_id; no reverse geometry references are stored on names.
+Name identities, preferred labels, alternative strings and detailed types are preserved. Display alternatives exclude confirmed spelling errors, incomplete forms, redundant generic forms, identified source-language translations and reviewed unconfirmed or historical forms of uncertain validity; original source forms remain in the workflow audit. Each object has one Point selected from observations supporting its preferred-name source. A recorded point takes precedence over a representative point derived from the original source line or polygon. Equivalent observations are selected deterministically by source feature/name identifiers and coordinates; points are never averaged. If the preferred name has no documented source, its source is other, with no invented source identifier, and an existing object location is selected. System scopes, alternative-object cross-references and source-location collections are not part of the public name schema. Detailed evidence and the recorded/derived point-selection method remain in the workflow audit. Physical water bodies and river reaches link directly through gazetteer_id; no reverse geometry references are stored on names.
+
+Reviewed naming limitations: Fondeadero de Conuco (01a1a42a-a5cf-7502-88cd-e04a377e74c9): provisional preferred name. Conuco is provisionally preferred; the competing Comico form lacks sufficient corroboration.
 
 A name Point is a location, not the geometry or extent of the river, lake or other named feature. Water-body polygons and river centerlines retain their own geometry and link to this list by `gazetteer_id` → `id`.
 

@@ -52,7 +52,7 @@
   <mdb:dateInfo>
     <cit:CI_Date>
       <cit:date>
-        <gco:DateTime>2026-11-04T17:07:29.748923-08:00</gco:DateTime>
+        <gco:DateTime>2026-11-05T11:01:38.798895-08:00</gco:DateTime>
       </cit:date>
       <cit:dateType>
         <cit:CI_DateTypeCode codeList="https://schemas.isotc211.org/resources/codelists/codelists.xml#ISO19115-1.1.cit.CI_DateTypeCode" codeListValue="creation">creation</cit:CI_DateTypeCode>
@@ -67,7 +67,7 @@
             <msr:MD_GeometricObjectTypeCode codeList="https://schemas.isotc211.org/resources/codelists/codelists.xml#ISO19115-1.1.msr.MD_GeometricObjectTypeCode" codeListValue="point">point</msr:MD_GeometricObjectTypeCode>
           </msr:geometricObjectType>
           <msr:geometricObjectCount>
-            <gco:Integer>8984</gco:Integer>
+            <gco:Integer>8935</gco:Integer>
           </msr:geometricObjectCount>
         </msr:MD_GeometricObjects>
       </msr:geometricObjects>
@@ -94,7 +94,7 @@
           <cit:date>
             <cit:CI_Date>
               <cit:date>
-                <gco:Date>2026-11-04</gco:Date>
+                <gco:Date>2026-11-05</gco:Date>
               </cit:date>
               <cit:dateType>
                 <cit:CI_DateTypeCode codeList="https://schemas.isotc211.org/resources/codelists/codelists.xml#ISO19115-1.1.cit.CI_DateTypeCode" codeListValue="creation">creation</cit:CI_DateTypeCode>
@@ -146,7 +146,7 @@
         </cit:CI_Citation>
       </mri:citation>
       <mri:abstract>
-        <gco:CharacterString>Water name objects with an ID, preferred name, string-array alternatives, feature type, preferred-name source reference and one Point location in EPSG:4326. Unreleased candidate: 8,984 records.</gco:CharacterString>
+        <gco:CharacterString>Water name objects with an ID, preferred name, string-array alternatives, feature type, preferred-name source reference and one Point location in EPSG:4326. Unreleased candidate: 8,935 records.</gco:CharacterString>
       </mri:abstract>
       <mri:spatialRepresentationType>
         <mcc:MD_SpatialRepresentationTypeCode codeList="https://schemas.isotc211.org/resources/codelists/codelists.xml#ISO19115-1.1.mcc.MD_SpatialRepresentationTypeCode" codeListValue="vector">vector</mcc:MD_SpatialRepresentationTypeCode>
@@ -285,7 +285,7 @@
   <mdb:resourceLineage>
     <mrl:LI_Lineage>
       <mrl:statement>
-        <gco:CharacterString>Name identities, preferred labels, alternative strings and detailed types are preserved. Display alternatives exclude confirmed spelling errors, incomplete forms, redundant generic forms, identified source-language translations and reviewed historical forms of uncertain validity; original source forms remain in the workflow audit. Each object has one Point selected from observations supporting its preferred-name source. A recorded point takes precedence over a representative point derived from the original source line or polygon. Equivalent observations are selected deterministically by source feature/name identifiers and coordinates; points are never averaged. If the preferred name has no documented source, its source is other, with no invented source identifier, and an existing object location is selected. System scopes, alternative-object cross-references and source-location collections are not part of the public name schema. Detailed evidence and the recorded/derived point-selection method remain in the workflow audit. Physical water bodies and river reaches link directly through gazetteer_id; no reverse geometry references are stored on names.</gco:CharacterString>
+        <gco:CharacterString>Name identities, preferred labels, alternative strings and detailed types are preserved. Display alternatives exclude confirmed spelling errors, incomplete forms, redundant generic forms, identified source-language translations and reviewed unconfirmed or historical forms of uncertain validity; original source forms remain in the workflow audit. Each object has one Point selected from observations supporting its preferred-name source. A recorded point takes precedence over a representative point derived from the original source line or polygon. Equivalent observations are selected deterministically by source feature/name identifiers and coordinates; points are never averaged. If the preferred name has no documented source, its source is other, with no invented source identifier, and an existing object location is selected. System scopes, alternative-object cross-references and source-location collections are not part of the public name schema. Detailed evidence and the recorded/derived point-selection method remain in the workflow audit. Physical water bodies and river reaches link directly through gazetteer_id; no reverse geometry references are stored on names. Reviewed naming limitations: Fondeadero de Conuco (01a1a42a-a5cf-7502-88cd-e04a377e74c9): provisional preferred name. Conuco is provisionally preferred; the competing Comico form lacks sufficient corroboration.</gco:CharacterString>
       </mrl:statement>
       <mrl:source>
         <mrl:LI_Source>

@@ -29,7 +29,7 @@ Valid consolidated source names are retained even when no geometry assignment is
 
 ![Hidrografía de Cuba](hydrography_map.png)
 
-[Water Geographic Names](data/water-geographic-names/) — 8,984 consolidated objects with preferred names, recorded alternatives, detailed types, a preferred-name source reference and one Point location. **ODbL 1.0.**
+[Water Geographic Names](data/water-geographic-names/) — 8,935 consolidated objects with preferred names, recorded alternatives, detailed types, a preferred-name source reference and one Point location. **ODbL 1.0.**
 
 [River and Channel Centerlines](data/river-centerlines/) — 56,594 reaches with drainage topology, stream order, direct name references and naming status, including explicit uncertain and withheld assignments. **ODbL 1.0.**
 
